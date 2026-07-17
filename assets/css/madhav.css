@@ -1,0 +1,4166 @@
+:root {
+    --blue: #246cbc;
+    --yellow: #fad84a;
+}
+
+
+p {
+    font-size: 18px !important;
+}
+
+/* banner css */
+.about-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-about-new.jpg') center center/cover no-repeat;
+    position: relative;
+    background-position: right;
+}
+
+.esg-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-esg.jpg') center center/cover no-repeat;
+    position: relative;
+    background-position: right;
+}
+
+.contact-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-contact.jpg') center center/cover no-repeat;
+    position: relative;
+    background-position: right;
+}
+
+.product1-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-product-1.jpg') center center/cover no-repeat;
+    position: relative;
+    background-position: right;
+}
+
+.product2-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-product-2-1.jpg') center center/cover no-repeat;
+    position: relative;
+    background-position: right;
+}
+
+.manufacturing-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-manufacturing.jpg') center center/cover no-repeat;
+    position: relative;
+    background-position: right;
+}
+.people-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/people-banner.jpg') center center/cover no-repeat;
+    position: relative;
+    background-position: center;
+}
+.mu-mobile-header .mu-mobile-dropdown{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mu-mobile-header .mu-mobile-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+    text-decoration: none;
+}
+
+.mu-mobile-header .mu-arrow{
+    font-size: 22px;
+    color: #246cbc;
+    transition: .3s;
+}
+.hero-facts{
+    position: relative;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.fact-box {
+    text-align: center;
+    background: rgb(0 0 0 / 18%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(145 145 145 / 15%);
+    border-radius: 15px;
+    padding: 25px 15px;
+    height: 100%;
+}
+
+.fact-box i{
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.fact-box h3{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.fact-box p{
+    color: rgba(255,255,255,.9);
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media(max-width:991px){
+    .hero-facts{
+        position: relative;
+        bottom: auto;
+        margin-top: 40px;
+    }
+
+    .fact-box h3{
+        font-size: 28px;
+    }
+}
+.mu-mobile-header .mu-mobile-dropdown.active .mu-arrow{
+    transform: rotate(45deg);
+}
+
+.mu-mobile-header .mu-mobile-submenu{
+    display: none;
+    list-style: none;
+    padding: 0 0 10px 15px;
+    margin: 0;
+}
+
+.mu-mobile-header .mu-mobile-submenu li{
+    margin-bottom: 8px;
+}
+
+.mu-mobile-header .mu-mobile-submenu a{
+    display: block;
+    padding: 12px 15px;
+    background: #f8f9fb;
+    border-left: 4px solid #246cbc;
+    border-radius: 8px;
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.mu-mobile-header .mu-mobile-submenu a:hover{
+    background: #246cbc;
+    color: #fff;
+}
+/* mobile header end */
+/* --- Standardized Heading Configurations --- */
+.section-heading-block {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+
+/* This forces every section's principal title to share identical typography & accents */
+.section-main-title {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+}
+
+.section-main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 3.5px;
+    background-color: #fad84a;
+}
+
+.section-main-title-2 {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    text-transform: capitalize;
+    display: inline-block;
+    padding-bottom: 12px;
+    margin-bottom: 1rem;
+}
+
+.section-main-title-2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    /* transform: translateX(-50%); */
+    width: 55px;
+    height: 3.5px;
+    background-color: #fad84a;
+}
+
+.section-main-title-2-sub {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+    margin-bottom: 1rem;
+}
+
+.section-main-title-2-sub::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    /* transform: translateX(-50%); */
+    width: 55px;
+    height: 3.5px;
+    background-color: #fad84a;
+}
+
+.inner-banners-content {
+    max-width: 800px;
+}
+
+.inner-banners-image img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+.inner-banners-text {
+    color: #fff;
+}
+
+.inner-banners-badge {
+    display: inline-block;
+    background: var(--yellow);
+    color: #000;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.inner-banners-title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.inner-banners-title-2 {
+    font-size: 30px;
+    color: var(--blue);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+.inner-banners-line {
+    width: 120px;
+    height: 3px;
+    background: var(--yellow);
+}
+
+.inner-banner-subline {
+    color: #4b4b4b;
+    padding-top: 1rem;
+}
+
+
+/* --- Introduction Section Layout --- */
+/* .about-mission-bg1 {
+    
+    position: relative;
+  
+} */
+
+
+.intro-section-bg {
+   position: relative;
+    padding: 100px 0px;
+}
+
+.intro-img-wrapper {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+.intro-img-wrapper img {
+    border-bottom: 6px solid #fad84a;
+    width: 100%;
+    display: block;
+}
+
+.intro-heading {
+    color: var(--blue) !important;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+
+.intro-paragraph {
+    color: #444444;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 18px;
+}
+
+.madhav-testi-section .carousel {
+    position: relative;
+}
+
+.madhav-testi-prev,
+.madhav-testi-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.madhav-testi-prev {
+    left: -60px;
+}
+
+.madhav-testi-next {
+    right: -60px;
+}
+
+.madhav-testi-prev span,
+.madhav-testi-next span {
+    width: 50px;
+    height: 50px;
+    background: #c62828;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.madhav-testi-prev i,
+.madhav-testi-next i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background: #fff !important;
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid var(--blue);
+}
+
+.carousel-indicators .active {
+    background: var(--blue) !important;
+}
+
+@media (max-width: 991px) {
+    .madhav-testi-prev {
+        left: 10px;
+    }
+
+    .madhav-testi-next {
+        right: 10px;
+    }
+}
+
+/* --- Growth Journey Section Layout --- */
+.growth-journey-section {
+    background:
+        url('../img/madhav/about-sec-journey.jpg') no-repeat center;
+    background-size: cover;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.journey-icon-wrap {
+    font-size: 28px;
+    text-align: center;
+    color: var(--blue);
+    display: inline-block;
+}
+
+.journey-text {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.75;
+    color: #444444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* --- Inner Visual Cards Setup (Vision/Mission/Management) --- */
+.main-card-white {
+    background: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0 1px 22px rgba(0, 0, 0, 13%);
+    padding: 45px;
+    border: none;
+}
+
+.main-card-blue {
+    background: var(--blue);
+    border-radius: 40px;
+    color: #ffffff;
+    padding: 50px;
+    box-shadow: 0 15px 45px rgba(33, 99, 184, 0.18);
+    border: none;
+  
+}
+
+.inner-img-wrapper {
+    position: relative;
+    border-radius: 20px;
+}
+
+.inner-img-wrapper .mission-img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid #fad84a;
+}
+
+/* --- Floating Absolute Icon Badges --- */
+.badge-icon-overlay {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+
+.badge-blue-bg {
+    background-color: var(--blue);
+    color: #ffffff;
+    bottom: -20px;
+    right: -20px;
+}
+
+.badge-white-bg {
+    background-color: #ffffff;
+    color: var(--blue);
+    top: 50%;
+    left: -35px;
+    transform: translateY(-50%);
+}
+
+.quality-img img {
+    width: 55px !important;
+}
+
+/* --- Mission Content Lists --- */
+.mission-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mission-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    line-height: 1.65;
+    opacity: 0.92;
+}
+
+.mission-list li::before {
+    content: "•";
+    color: #fad84a;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.mission-icon-madhav {
+    width: 80px !important;
+}
+
+/* --- Core Corporate Values Elements --- */
+.values-bg {
+    background-color: #f6f8fa;
+}
+
+.value-card {
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 25px;
+    padding: 28px 16px;
+    text-align: center;
+    box-shadow: 0 4px 22px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.value-card .value-icon {
+    font-size: 2.8rem;
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+.value-card h5 {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: #555555;
+    line-height: 1.65;
+    margin-bottom: 20px;
+}
+
+.value-card .yellow-dash {
+    width: 35px;
+    height: 3px;
+    background-color: #fad84a;
+    margin: 0 auto;
+}
+
+/* --- Executive Management Profile Element --- */
+.management-img-wrapper {
+    position: relative;
+    /* background: #f8f9fa; */
+    border-radius: 0px;
+    overflow: hidden;
+    border-bottom: 5px solid #fad84a;
+    text-align: center;
+}
+
+.management-img-wrapper img {
+    max-height: 250px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.mgmt-title {
+    color: var(--blue);
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 26px;
+}
+
+.mgmt-subtitle {
+    color: #555555;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.team-border {
+    border-right: 2px solid #c9c9c991;
+}
+
+/* contact us  */
+/* --- Master Contact Wrapper Scope --- */
+.madhav-contact {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- Heading Block Configuration --- */
+.madhav-contact .madhav-contact-title-block {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.madhav-contact .madhav-contact-main-title {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.45rem;
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.madhav-contact .madhav-contact-main-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45px;
+    height: 3px;
+    background-color: #fad84a;
+}
+
+/* --- Shared Contact Card Elements --- */
+.madhav-contact .contact-box-card {
+    background-color: #f0f0f2;
+    border-radius: 12px;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.madhav-contact .contact-icon-square {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.madhav-contact .icon-blue {
+    background-color: var(--blue);
+    color: #ffffff;
+}
+
+.madhav-contact .contact-label-tag {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.madhav-contact .company-name {
+    font-size: 1.05rem;
+}
+
+.madhav-contact .address-text {
+    font-size: 0.9rem;
+    line-height: 120%;
+    color: #4b4b4b;
+    margin-top: 10px;
+}
+
+.madhav-contact .contact-detail-val {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4b4b4b;
+}
+.contact-detail-val a{
+    color: #000;
+}
+/* --- Google Map Block --- */
+.madhav-contact .map-wrapper-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.madhav-contact .map-placeholder-bg {
+    height: 320px;
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+}
+
+.madhav-contact .map-info-window {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #ffffff;
+    border-radius: 6px;
+    width: 240px;
+    z-index: 10;
+}
+
+/* --- WhatsApp Panel --- */
+.madhav-contact .whatsapp-card {
+    background-color: #f0f0f2;
+    border-radius: 12px;
+}
+
+.madhav-contact .icon-whatsapp {
+    background-color: var(--blue);
+    /* Styled down from image backdrop tint color */
+    color: #ffffff;
+}
+
+.madhav-contact .whatsapp-title {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.madhav-contact .whatsapp-text {
+    font-size: 0.88rem;
+    color: #4b4b4b;
+}
+
+/* --- Follow Us & Watermarks --- */
+.madhav-contact .follow-us-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Dynamic line tower background watermark tracking from image_9530da.png layout */
+.madhav-contact .follow-us-wrapper::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    right: -20px;
+    width: 250px;
+    height: 300px;
+    background-image: url('image_9530da.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    opacity: 0.12;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.madhav-contact .follow-us-wrapper .madhav-contact-title-block {
+    text-align: center;
+}
+
+.madhav-contact .follow-us-wrapper .madhav-contact-main-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.madhav-contact .follow-subtitle {
+    font-size: 0.88rem;
+    color: #444444;
+}
+
+/* Pill Icon Buttons styling */
+.madhav-contact .social-pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f0f0f2;
+    color: #333333;
+    padding: 8px 22px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.madhav-contact .social-pill-btn:hover {
+    background-color: #e2e2e6;
+    transform: translateY(-2px);
+    color: #000000;
+}
+
+.madhav-contact .social-pill-btn .icon-color {
+    font-size: 1.05rem;
+}
+
+.madhav-contact .btn-linkedin .icon-color {
+    color: #0a66c2;
+}
+
+.madhav-contact .btn-youtube .icon-color {
+    color: #ff0000;
+}
+
+.madhav-contact .btn-twitter .icon-color {
+    color: #000000;
+}
+
+.madhav-contact .btn-instagram .icon-color {
+    color: #e1306c;
+}
+
+.madhav-contact-bg {
+    /* background-image: url(../img/madhav/contact-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+@media (max-width: 991px) {
+
+    .inner-banners {
+        height: auto;
+    }
+
+    .inner-banners-content {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .inner-banners-image {
+        margin-bottom: 20px;
+    }
+
+    .inner-banners-title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .inner-banners {
+        height: auto;
+    }
+
+    .inner-banners-title {
+        font-size: 28px;
+    }
+
+    .inner-banners-image img {
+        width: 80px;
+    }
+}
+
+/* esg page */
+.egs-2 {
+ position: relative;
+}
+
+.esg-card {
+    border: 1px solid #e1e1e1;
+    padding: 20px 10px;
+    border-radius: 20px;
+   height: 450px;
+    background-color: #fff;
+}
+
+.esg-card h5 {
+    font-size: 18px;
+    color: #246cbc;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.esg-card p {
+    font-size: 18px !important;
+}
+
+/*=========================
+ ESG SECTION 3
+=========================*/
+
+.esg-sec-3 {
+    background: #fff;
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+
+.esg-sec-3 .container {
+    /* max-width:1280px; */
+}
+
+/* TITLE */
+
+.esg-sec-3-title {
+    font-size: 58px;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.esg-sec-3-title::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: #f2c200;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+}
+
+/* INTRO */
+
+.esg-sec-3-intro {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 35px;
+}
+
+.esg-sec-3-intro-icon {
+    flex: 0 0 75px;
+}
+
+/* .esg-sec-3-intro-icon img{
+    width:50px;
+} */
+
+.esg-sec-3-intro-text {
+    /* max-width:520px; */
+}
+
+.esg-sec-3-intro-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* CARDS */
+
+.esg-sec-3-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    min-height: 300px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+    border: 1px solid #efefef;
+    position: relative;
+    z-index: 1;
+}
+
+.esg-sec-3-card-head {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.esg-sec-3-card-head img {
+    width: 44px;
+    min-width: 44px;
+}
+
+.esg-sec-3-card-head h4 {
+    color: var(--blue);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.esg-sec-3-card-head span {
+    width: 42px;
+    height: 3px;
+    background: #f2c200;
+    display: block;
+    margin-top: 12px;
+}
+
+.esg-sec-3-card p {
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* RIGHT SIDE */
+
+.esg-sec-3-right-wrap {
+    position: relative;
+    min-height: 900px;
+}
+
+.esg-sec-3-tree-image {
+    text-align: right;
+    margin-bottom: 35px;
+    position: relative;
+    top: 60px;
+}
+
+.esg-sec-3-tree-image img {
+    width: 100%;
+    /* max-width:420px; */
+}
+
+.esg-sec-3-side-image {
+    width: 180px;
+    height: 420px;
+    background: #dedede;
+    border-radius: 18px;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 52px;
+    font-weight: 700;
+    color: #111;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px) {
+
+    .esg-sec-3-title {
+        font-size: 42px;
+    }
+
+    .esg-sec-3-right-wrap {
+        min-height: auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .esg-sec-3-side-image {
+        margin: 30px auto 0;
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .esg-sec-3-card-head h4 {
+        font-size: 24px;
+    }
+    .esg-sec-3-intro-icon img{
+    width:100%;
+}
+
+}
+
+@media(max-width:767px) {
+     .esg-sec-3-intro-icon img{
+    width:50%
+}
+
+    .esg-sec-3-intro {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .esg-sec-3-title {
+        font-size: 34px;
+    }
+
+    .esg-sec-3-card {
+        min-height: auto;
+    }
+
+    .esg-sec-3-card-head h4 {
+        font-size: 22px;
+    }
+}
+
+.esg-sec-4{
+    
+    position:relative;
+  
+    
+}
+
+  .egs-sec-4 {
+    background: #fff;
+    overflow: hidden;
+}
+
+.egs-sec-4 .container {
+    /* max-width:1280px; */
+}
+
+/* TITLE */
+
+.egs-sec-4-title {
+    font-size: 58px;
+    font-weight: 700;
+    color: var(--blue);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.egs-sec-4-title::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: #f2c200;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+}
+
+/* INTRO */
+
+.egs-sec-4-intro {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 35px;
+}
+
+.egs-sec-4-intro-icon {
+    flex: 0 0 75px;
+}
+
+/* .egs-sec-4-intro-icon img{
+    width:50px;
+} */
+
+.egs-sec-4-intro-text {
+    /* max-width:520px; */
+}
+
+.egs-sec-4-intro-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* CARDS */
+
+.egs-sec-4-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    min-height: 300px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+    border: 1px solid #efefef;
+    position: relative;
+    z-index: 1;
+}
+
+.egs-sec-4-card-head {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+.egs-sec-4-card-head img {
+    width: 44px;
+    min-width: 44px;
+}
+
+.egs-sec-4-card-head h4 {
+    color: var(--blue);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.egs-sec-4-card-head span {
+    width: 42px;
+    height: 3px;
+    background: #f2c200;
+    display: block;
+    margin-top: 12px;
+}
+
+.egs-sec-4-card p {
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* RIGHT SIDE */
+
+.egs-sec-4-right-wrap {
+    position: relative;
+    min-height: 900px;
+}
+
+.egs-sec-4-tree-image {
+    text-align: right;
+    margin-bottom: 35px;
+    position: relative;
+    top: 60px;
+}
+
+.egs-sec-4-tree-image img {
+    width: 100%;
+    /* max-width:420px; */
+}
+
+.egs-sec-4-side-image {
+    width: 180px;
+    height: 420px;
+    background: #dedede;
+    border-radius: 18px;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 52px;
+    font-weight: 700;
+    color: #111;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px) {
+
+    .egs-sec-4-title {
+        font-size: 42px;
+    }
+
+    .egs-sec-4-right-wrap {
+        min-height: auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .egs-sec-4-side-image {
+        margin: 30px auto 0;
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+    }
+
+    .egs-sec-4-card-head h4 {
+        font-size: 24px;
+    }
+    .egs-sec-4-intro-icon img{
+    width:100%;
+}
+
+}
+
+@media(max-width:767px) {
+     .egs-sec-4-intro-icon img{
+    width:50%
+}
+
+    .egs-sec-4-intro {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .egs-sec-4-title {
+        font-size: 34px;
+    }
+
+    .egs-sec-4-card {
+        min-height: auto;
+    }
+
+    .egs-sec-4-card-head h4 {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.border-right-gover {
+    border-right: 2px solid #efefef;
+
+}
+
+.egs-governance .container {
+    border-bottom: 2px solid #efefef;
+}
+
+/*=================================
+OUR APPROACH & PARTNERS
+=================================*/
+
+.egs-approach {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.certi-card img {
+    width: 80% !important;
+    object-fit: cover;
+    border: 5px solid #246cbc;
+}
+
+/* .egs-approach .container{
+    max-width:1280px;
+} */
+
+/* Heading */
+
+.egs-approach-title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--blue);
+    margin-bottom: 70px;
+    position: relative;
+    display: inline-block;
+}
+
+.egs-approach-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 85px;
+    height: 4px;
+    background: #fad84a;
+}
+
+/* Items */
+
+.egs-approach-item {
+    padding: 35px 0;
+    border-bottom: 1px solid #dfe6ef;
+}
+
+.egs-approach-logo {
+    min-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.egs-approach-logo-partner{
+    min-height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.egs-approach-logo-partner img {
+    max-width: 140px;
+    width: 100%;
+}
+
+.egs-approach-logo img {
+    max-width: 140px;
+    width: 100%;
+}
+
+.egs-approach-content h3 {
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.egs-approach-line {
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #fad84a;
+    margin-bottom: 15px;
+}
+
+.egs-approach-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0;
+    /* max-width: 700px; */
+    font-weight: 500;
+}
+
+/* Right Image */
+
+.egs-approach-image {
+    width: 100%;
+    max-width: 400px;
+    height: 560px;
+    margin-left: auto;
+    border-radius: 28px;
+    background: #dddddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 64px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Responsive */
+
+@media (max-width:991px) {
+
+    .egs-approach-title {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+
+    .egs-approach-image {
+        margin: 50px auto 0;
+        max-width: 450px;
+        height: 450px;
+    }
+
+    .egs-approach-item {
+        text-align: center;
+    }
+
+    .egs-approach-line {
+        margin: 15px auto;
+    }
+
+    .egs-approach-content p {
+        max-width: 100%;
+    }
+    .egs-approach-logo-partner img{
+         max-width: unset !important;
+    width: 20%;
+    }
+    .egs-approach-logo img {
+    max-width: unset !important;
+    width: 20%;
+}
+.egs-approach-logo-partner {
+    min-height: 0px;
+    display: block;
+    align-items: center;
+    justify-content: start;
+}
+}
+
+@media (max-width:767px) {
+.egs-approach-logo-partner img{
+         max-width: unset !important;
+    width: 70%;
+    }
+    .egs-approach-title {
+        font-size: 34px;
+    }
+
+    .egs-approach-content h3 {
+        font-size: 24px;
+    }
+
+    .egs-approach-content p {
+        font-size: 16px;
+    }
+
+    .egs-approach-image {
+        height: 320px;
+        font-size: 42px;
+    }
+}
+
+.egs-matters {
+    background-image: url(../img/madhav/matters-bg.png);
+    /* position:relative; */
+    /* overflow:hidden; */
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.egs-governance{
+    position:relative;
+  
+}
+.esg-sec-3{
+     /* background-image: url(../img/madhav/esg-education.png); */
+    position:relative;
+    /* overflow:hidden; */
+    /* background-repeat: no-repeat;
+    background-position: right; */
+}
+.madhav-careers-new1{
+
+    position:relative;
+    /* overflow:hidden; */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================
+CAPABILITIES
+=========================*/
+
+.egs-capabilities {
+    /* background-image: url(../img/madhav/capa-bg-full.png); */
+    position: relative;
+  
+}
+
+.egs-capabilities .container {}
+
+/* Heading */
+
+.egs-capabilities-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.egs-capabilities-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 80px;
+    height: 3px;
+    background: var(--yellow);
+}
+
+/* Text */
+
+.egs-capabilities-content p {
+    font-size: 15px;
+    line-height: 1.45;
+    color: #4d4d4d;
+    margin-bottom: 15px;
+}
+
+/* Images */
+.capa-images img {
+    border-radius: 25px;
+    width:100%;
+}
+
+/* .egs-capabilities-image-top{
+    width:420px;
+    height:230px;
+    margin-left:auto;
+}
+
+.egs-capabilities-image-left{
+    width:100%;
+    max-width:420px;
+    height:250px;
+} */
+
+/* Table */
+
+/*===================================
+CAPABILITY TABLE MADHAV
+===================================*/
+
+.capa-table-madhav {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+}
+
+.capa-table-madhav tr {
+    height: 40px;
+}
+
+.capa-table-madhav td {
+    border: 1px solid #d7d7d7;
+    vertical-align: middle;
+    padding: 0;
+}
+
+/* ICON COLUMN */
+
+.capa-table-madhav-icon {
+    width: 52px;
+    min-width: 52px;
+    text-align: center;
+    background: var(--blue) !important;
+}
+
+.capa-table-madhav-icon img {
+    padding: 10px;
+}
+
+/* TITLE COLUMN */
+
+.capa-table-madhav-title {
+    width: 265px;
+    min-width: 265px;
+    padding: 10px 18px !important;
+    border-left: 5px solid var(--blue) !important;
+    color: var(--blue);
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    background: #fff;
+}
+
+/* VALUE COLUMN */
+
+.capa-table-madhav-value {
+    padding: 10px 16px !important;
+
+    color: #4d4d4d;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* MOBILE */
+
+@media(max-width:767px) {
+
+    .capa-table-madhav-title {
+        width: 180px;
+        min-width: 180px;
+        font-size: 13px;
+    }
+
+    .capa-table-madhav-value {
+        font-size: 13px;
+    }
+
+    .capa-table-madhav-icon {
+        width: 42px;
+        min-width: 42px;
+    }
+
+    .capa-table-madhav-icon i {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+/* Applications */
+
+.egs-capabilities-app-card {
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid #dbdbdb;
+}
+
+.egs-capabilities-app-image {
+    height: 170px;
+    background: #dddddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.egs-capabilities-app-content {
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    padding: 20px 50px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+/* Responsive */
+
+@media(max-width:991px) {
+
+    .egs-capabilities-image-top,
+    .egs-capabilities-image-left {
+        max-width: 100%;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .egs-capabilities-title {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .egs-capabilities-title {
+        font-size: 24px;
+    }
+
+    .egs-capabilities-label {
+        width: auto;
+    }
+}
+
+.certi-bg {
+    position: relative;
+    right: -50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-2-sec1 {
+    padding: 100px 0px;
+    position: relative;
+}
+
+.product-2-sec3 {
+    position: relative;
+}
+
+.product-2-sec4 {
+
+    /* background-image: url(../img/madhav/product-5.png); */
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+    background-position: bottom;
+}
+
+.space-product-2 {
+    padding: 90px 0px;
+}
+
+/* ================================ product 2 =======================================*/
+
+
+.madhav-product2-number {
+    color: #fad84a;
+    font-weight: 700;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.madhav-product2-title {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.product-2-sec {
+    background-color: #f4f9ff;
+    padding: 100px 0px;
+}
+/* .egs-capabilities-app-content {
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    padding: 20px 50px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 500;
+} */
+.egs-capabilities-app-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.egs-capabilities-app-content h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 120%;
+}
+
+.egs-capabilities-app-content-other {
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    padding: 20px 50px;
+    /* height: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+.egs-capabilities-app-content-other h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.egs-capabilities-app-content-other h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 120%;
+}
+
+
+
+/* ========================================================================================================
+   MADHAV MANUFACTURING
+======================================================================================================== */
+.manufacturing-bg-sec3-app-content {
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 21px; */
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.manufacturing-bg-sec3-app-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.manufacturing-bg-sec3-app-content h5 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 120%;
+}
+
+
+
+
+
+.madhav-manufacturing {
+    background: #fff;
+}
+
+.madhav-manufacturing-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #246cbc;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.madhav-manufacturing-line {
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #ffc107;
+}
+
+.madhav-manufacturing-table {
+    border: 1px solid #d8d8d8;
+    background: #fff;
+}
+
+.madhav-manufacturing-table thead th {
+    background: #246cbc;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, .15);
+    padding: 12px;
+}
+
+.madhav-manufacturing-table td {
+    border: 1px solid #dcdcdc;
+    vertical-align: middle;
+    padding: 16px 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.madhav-manufacturing-icon {
+    width: 70px;
+    background: #246cbc !important;
+}
+
+.madhav-manufacturing-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.madhav-manufacturing-number {
+    width: 60px;
+    text-align: center;
+    color: #246cbc;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.madhav-manufacturing-stage {
+    min-width: 180px;
+    color: #246cbc !important;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.madhav-manufacturing-capacity {
+    min-width: 180px;
+    color: #246cbc !important;
+    font-size: 22px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.madhav-manufacturing-table tbody tr:hover {
+    background: #f6f9ff;
+}
+
+/* ===========================
+   MADHAV MANUFACTURING SEC 1
+=========================== */
+
+.madhav-manufacturing-sec1 {
+    padding-top: 100px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional tower background */
+
+
+.madhav-manufacturing-sec1-content {
+    position: relative;
+    z-index: 2;
+}
+
+.madhav-manufacturing-sec1-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1e63b5;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.madhav-manufacturing-sec1-line {
+    width: 70px;
+    height: 4px;
+    background: #f7c600;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.madhav-manufacturing-sec1-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4f4f4f;
+    margin-bottom: 25px;
+}
+
+/* Slider */
+
+.madhav-manufacturing-sec1-slider {
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+    background: #e9e9e9;
+    position: relative;
+    z-index: 2;
+}
+
+.madhav-manufacturing-sec1-slider img {
+    /* height: 420px; */
+    object-fit: cover;
+}
+
+.madhav-manufacturing-sec1-slider .carousel-indicators {
+    margin-bottom: 20px;
+}
+
+.madhav-manufacturing-sec1-slider .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.madhav-manufacturing-sec1-slider .carousel-control-prev,
+.madhav-manufacturing-sec1-slider .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.madhav-manufacturing-sec1-slider .carousel-control-prev-icon,
+.madhav-manufacturing-sec1-slider .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+    background-size: 70%;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.manufacturing-bg-sec3 {
+    background-color: #f4f9ff;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+
+
+
+/*=================================
+  MADHAV MANUFACTURING SEC 5
+=================================*/
+
+.madhav-manufacturing-sec5 {
+    padding: 80px 0;
+    background: #fff;
+    position: relative;
+}
+
+.madhav-manufacturing-sec5-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #246cbc;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.madhav-manufacturing-sec5-line {
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #f4c400;
+    margin-bottom: 50px;
+}
+
+.madhav-manufacturing-sec5-card {
+    position: relative;
+    height: 100%;
+    padding: 25px;
+    background: #fff;
+    border: 2px solid #e9e9e9;
+    border-radius: 22px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+}
+
+.madhav-manufacturing-sec5-icon {
+    margin-bottom: 20px;
+}
+
+.madhav-manufacturing-sec5-icon img {
+    width: 60px;
+    height: auto;
+}
+
+.madhav-manufacturing-sec5-card h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #246cbc;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.madhav-manufacturing-sec5-card p {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #444;
+    margin-bottom: 0;
+}
+
+/* Arrow Between Cards */
+
+.madhav-manufacturing-sec5-arrow {
+    position: relative;
+}
+
+.madhav-manufacturing-sec5-arrow-card::after {
+    content: "\F285";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    right: -34px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2c67b7;
+    font-size: 40px;
+    z-index: 20;
+    font-weight: 900;
+}
+
+.madhav-manufacturing-sec5-arrow::after {
+    content: "›";
+    position: absolute;
+    right: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 90px;
+    line-height: 1;
+    color: #246cbc;
+    font-weight: 300;
+    z-index: 10;
+}
+
+
+.madhav-manufacturing-sec6 {
+position: relative;  
+}
+
+
+.product-2-sec5{
+    position: relative;
+}
+
+
+
+
+
+/*=================================
+         MADHAV CAREERS
+=================================*/
+
+.madhav-careers {
+    /* background:#fff; */
+    background-image: url(../img/madhav/career-bg.png);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.madhav-careers-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #246cbc;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.madhav-careers-line {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f4c400;
+}
+
+.madhav-careers-card {
+    height: 100%;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.madhav-careers-card:hover {
+    transform: translateY(-5px);
+}
+
+.madhav-careers-icon {
+    margin-bottom: 20px;
+}
+
+.madhav-careers-icon img {
+    width: 70px;
+}
+
+.madhav-careers-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #246cbc;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.madhav-careers-card p {
+    font-size: 15px;
+    color: #4d4d4d;
+    line-height: 1.45;
+    margin: 0;
+}
+
+/* Slider */
+
+.madhav-careers-slider {
+    border-radius: 25px;
+    overflow: hidden;
+    background: #e8e8e8;
+}
+
+.madhav-careers-slider img {
+    height: 420px;
+    object-fit: cover;
+}
+
+.madhav-careers-slider .carousel-control-prev,
+.madhav-careers-slider .carousel-control-next {
+    width: 45px;
+}
+
+/* Content */
+
+.madhav-careers-content h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #246cbc;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.madhav-careers-content-box {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.madhav-careers-content-box h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #246cbc;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.madhav-careers-content-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+}
+
+/*=================================
+      MADHAV CAREERS SEC 2
+=================================*/
+
+.madhav-careers-sec2 {
+    /* background:#fff; */
+    position: relative;
+    background-image: url(../img/madhav/career-bg2.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.madhav-careers-sec2-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #246cbc;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.madhav-careers-sec2-line {
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #fad84a;
+    margin-bottom: 30px;
+}
+
+/* Work Environment */
+
+.madhav-careers-sec2-env-card {
+    overflow: hidden;
+    border-radius: 25px;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    height: 100%;
+}
+
+.madhav-careers-sec2-env-img {
+    height: 180px;
+    background: #ececec;
+}
+
+.madhav-careers-sec2-env-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.madhav-careers-sec2-env-content {
+    background: #246cbc;
+    color: #fff;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 16px;
+    line-height: 1.3;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Description */
+
+.madhav-careers-sec2-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4d4d4d;
+    margin: 25px 0;
+    /* max-width:1000px; */
+}
+
+/* Table */
+
+.madhav-careers-sec2-table {
+    background: #fff;
+    border: 1px solid #e2e2e2;
+}
+
+.madhav-careers-sec2-table td {
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.madhav-careers-sec2-icon {
+    width: 70px;
+    text-align: center;
+}
+
+.madhav-careers-sec2-icon img {
+    width: 70px;
+}
+
+.madhav-careers-sec2-job {
+    color: #246cbc;
+    font-weight: 600;
+    min-width: 220px;
+}
+
+.madhav-careers-sec2-table .bi {
+    color: #246cbc;
+    margin-right: 8px;
+}
+
+.madhav-careers-sec2-btn {
+    background: #246cbc;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    transition: .3s;
+}
+
+.madhav-careers-sec2-btn:hover {
+    background: #246cbc;
+    color: #fff;
+}
+
+/* Responsive */
+
+@media(max-width:991px) {
+
+    .madhav-careers-sec2-title {
+        font-size: 30px;
+    }
+
+    .madhav-careers-sec2-env-img {
+        height: 220px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .madhav-careers-sec2-title {
+        font-size: 24px;
+    }
+
+    .madhav-careers-sec2-table td {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .madhav-careers-sec2-job {
+        min-width: 180px;
+    }
+}
+
+/* Responsive */
+
+@media(max-width:991px) {
+
+    .madhav-careers-title {
+        font-size: 34px;
+    }
+
+    .madhav-careers-content h2 {
+        font-size: 28px;
+    }
+
+    .madhav-careers-slider img {
+        height: 320px;
+    }
+}
+
+@media(max-width:767px) {
+
+    .madhav-careers-title {
+        font-size: 28px;
+    }
+
+    .madhav-careers-card {
+        padding: 25px 18px;
+    }
+
+    .madhav-careers-slider img {
+        height: 250px;
+    }
+
+    .madhav-careers-content h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width:991px) {
+
+    .madhav-manufacturing-sec5 {
+        padding: 60px 0;
+    }
+
+    .madhav-manufacturing-sec5-title {
+        font-size: 32px;
+    }
+
+    .madhav-manufacturing-sec5-arrow::after {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+
+    .madhav-manufacturing-sec5-title {
+        font-size: 26px;
+    }
+
+    .madhav-manufacturing-sec5-card {
+        padding: 20px;
+    }
+
+    .madhav-manufacturing-sec5-card h4 {
+        font-size: 16px;
+    }
+
+    .madhav-manufacturing-sec5-card p {
+        font-size: 15px;
+    }
+
+    .madhav-manufacturing-sec5-icon img {
+        width: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Hover Dropdown */
+.hover-dropdown {
+    position: relative;
+}
+
+.hover-dropdown .madhav-dd {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    margin-top: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.madhav-dd li {
+    width: 100%;
+}
+
+.hover-dropdown:hover .madhav-dd {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Optional Styling */
+.hover-dropdown .dropdown-item {
+    padding: 0px 20px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.hover-dropdown .dropdown-item:hover {
+    background: #f8f9fa;
+    padding-left: 25px;
+}
+
+/* Dropdown Items */
+.madhav-dd .dropdown-item {
+    padding: 10px 20px;
+    transition: all .3s ease;
+    border-left: 5px solid #3076c0;
+    font-size: 18px;
+}
+.madhav-dd .dropdown-item  li{
+    padding: 10px 20px;
+    transition: all .3s ease;
+    border-bottom: 2px solid #3076c0;
+    
+}
+.madhav-dd .dropdown-item:hover {
+    padding-left: 25px;
+    background: #3076c017;
+    font-size: 18px;
+}
+
+
+
+
+/* teams  */
+.madhav-team-section{
+    background:#fff;
+}
+
+.madhav-team-card{
+    background:#fff;
+    border-radius:24px;
+    overflow:hidden;
+    height:auto;
+    box-shadow:0 10px 35px rgba(0,0,0,0.08);
+    transition:all .4s ease;
+    position:relative;
+}
+
+.madhav-team-card:hover{
+    transform:translateY(-10px);
+}
+
+.madhav-team-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:#fad84a;
+}
+
+.madhav-team-image{
+    height:320px;
+    overflow:hidden;
+    background:#f5f5f5;
+}
+
+.madhav-team-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.madhav-team-card:hover .madhav-team-image img{
+    transform:scale(1.08);
+}
+
+.madhav-team-content{
+    padding:30px;
+}
+
+.madhav-team-role{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#6c757d;
+    margin-bottom:10px;
+}
+
+.madhav-team-name{
+    font-size:30px;
+    font-weight:700;
+    color:#246cbc;
+    margin-bottom:15px;
+}
+
+.madhav-team-content p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.madhav-team-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:#246cbc;
+    font-weight:600;
+    transition:.3s;
+}
+
+.madhav-team-btn:hover{
+    color:#fad84a;
+}
+
+@media(max-width:991px){
+    .madhav-team-image{
+        height:280px;
+    }
+
+    .madhav-team-name{
+        font-size:26px;
+    }
+}
+
+.madhav-team-more{
+    display:none;
+}
+
+.madhav-team-desc.active .madhav-team-more{
+    display:inline;
+}
+
+.madhav-team-desc.active .short-text {
+    display: inline;
+}
+
+.madhav-team-btn{
+    cursor:pointer;
+}
+
+
+.sector-desktop{
+    display: block;
+}
+.sector-mobile{
+    display: none;
+}
+
+
+/* Closed State */
+.accordion-button{
+    background: #f5f5f5;
+    color: #333;
+    font-size: 20px;
+     margin-bottom: 2rem;
+    font-weight: 600;
+    /* padding: 22px 30px; */
+    box-shadow: none !important;
+    transition: all .3s ease;
+}
+
+/* Hover on Closed Items */
+.accordion-button.collapsed:hover{
+    background: #fafafa;
+}
+
+/* Active/Open State */
+.accordion-button:not(.collapsed){
+    background: #246cbc;
+    color: #fff;
+    text-align: start;
+}
+
+/* Remove Bootstrap Focus */
+.accordion-button:focus{
+    box-shadow: none;
+    border: none;
+}
+
+/* Dark Arrow on Closed */
+.accordion-button::after{
+    filter: none;
+}
+
+/* White Arrow on Active */
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0) invert(1);
+}
+
+/* Body */
+.accordion-body{
+    padding: 30px;
+    background: #fff;
+    line-height: 1.9;
+    color: #555;
+}
+
+/* Icons */
+.accordion-button img{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+/* Make icon white when active */
+.accordion-button:not(.collapsed) img{
+    filter: brightness(0) invert(1);
+}
+/* Base wrapper */
+.esg-newslider {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Individual slides */
+.esg-newslider-item img {
+    object-fit: cover;
+    height: 350px; /* Force a consistent height if needed */
+}
+
+/* Captions */
+#esgFourImageSlider{
+    position: relative;
+}
+
+#esgFourImageSlider img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.esg-newslider-prev,
+.esg-newslider-next{
+    width:40px;
+    height:40px;
+    background:#000;
+    border-radius:50%;
+    top:60%;
+    /* transform:translateY(-50%); */
+    opacity:1;
+}
+
+/* .esg-newslider-prev{
+    left:-20px;
+}
+
+.esg-newslider-next{
+    right:-20px;
+} */
+/* .esg-newslider-prev{
+     width: 35px !important;
+    height: 35px !important;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+    top:50%;
+    bottom:50%;
+}
+
+.esg-newslider-next{
+     width: 35px !important;
+    height: 35px !important;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+    top:50%;
+    bottom:50%;
+} */
+
+
+/* sldier primary  */
+.moxo-swipe{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+
+.moxo-card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.moxo-prev,
+.moxo-next{
+    width: 35px !important;
+    height: 35px !important;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+}
+
+.moxo-prev:after,
+.moxo-next:after{
+    font-size: 20px !important;
+    color: #246cbc;
+}
+.home-video video{
+    width: 100% !important;
+}
+
+@media all and (min-width:1200px) and (max-width:1800px){
+.egs-capabilities-app-content {
+    background: var(--blue);
+    color: #fff;
+    text-align: center;
+    padding: 20px 50px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+}
+
+@media(max-width:991px) {
+
+    .madhav-manufacturing-sec1-title {
+        font-size: 36px;
+    }
+
+    .madhav-manufacturing-sec1-slider img {
+        /* height: 350px; */
+    }
+    .sector-desktop{
+    display: none;
+}
+.sector-mobile{
+    display: block;
+}
+}
+
+@media(max-width:767px) {
+
+    .madhav-manufacturing-sec1-title {
+        font-size: 28px;
+    }
+
+    .madhav-manufacturing-sec1-content p {
+        font-size: 16px;
+    }
+
+    .madhav-manufacturing-sec1-slider img {
+        height: 250px;
+    }
+    .esg-newslider-prev,
+.esg-newslider-next{
+    width:40px;
+    height:40px;
+    background:#000;
+    border-radius:50%;
+    top:60%;
+    /* transform:translateY(-50%); */
+    opacity:1;
+}
+}
+
+@media all and (min-width: 991px) and (max-width: 1500px) {
+    .main-menu a {
+        display: block;
+        position: relative;
+        font-weight: 600;
+        font-family: var(--body-font);
+        font-size: 15px;
+        color: var(--body-color);
+    }
+
+    .main-menu>ul>li {
+        margin: 0 10px;
+    }
+}
+@media (max-width:1199px){
+     .madhav-service-home-card {
+        height: 950px !important;
+    }
+    .home-sec-sector h2 {
+    
+    font-size:22px ;}
+    .portfolio-area-1{
+     padding-bottom: 0px;
+    }
+    .epc-border img {
+        width: 100%;
+    }
+    .footer-madhav .contact-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #246cbc;
+  text-decoration: none;
+}
+.madhav-why-image img {
+    height: 180px;
+    object-fit: cover;
+}
+.madhav-why-content h3{
+    font-size: 24px;
+}
+.egs-capabilities-app-content {
+height: 180px;
+padding: 20px 30px;
+}
+}
+@media(max-width:1199px){
+    .egs-capabilities-app-content{
+    padding: 20px;
+    
+}
+.egs-capabilities-app-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+}
+    /* banner css */
+.about-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-about-new.jpg') center center/cover no-repeat;
+    position: relative;
+     background-position: center;
+}
+
+.esg-banners {
+    height: 600px;
+    background: url('../img/madhav/banners/banner-esg.jpg') center center/cover no-repeat;
+    position: relative;
+     background-position: center;
+}
+
+.contact-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-contact.jpg') center center/cover no-repeat;
+    position: relative;
+     background-position: center;
+}
+
+.product1-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-product-1.jpg') center center/cover no-repeat;
+    position: relative;
+     background-position: center;
+}
+
+.product2-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-product-2-1.jpg') center center/cover no-repeat;
+    position: relative;
+     background-position: center;
+}
+
+.manufacturing-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/banner-manufacturing.jpg') center center/cover no-repeat;
+    position: relative;
+     background-position: center;
+}
+.people-banners {
+    height: 500px;
+    background: url('../img/madhav/banners/people-banner.jpg') center center/cover no-repeat;
+    position: relative;
+     background-position: center;
+}
+.manufacturing-bg-sec3-app-content h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 120%;
+}
+}
+@media(max-width:991px) {
+    .madhav-manufacturing-sec5-card h4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #246cbc;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.madhav-manufacturing-sec5-card {
+padding: 10px;
+}
+.quality-img img {
+    width: 45px !important;
+}
+    .madhav-manufacturing-title {
+        font-size: 30px;
+    }
+
+    .madhav-manufacturing-stage {
+        font-size: 18px;
+    }
+
+    .madhav-manufacturing-capacity {
+        font-size: 18px;
+    }
+
+    .madhav-manufacturing-number {
+        font-size: 18px;
+    }
+
+    .team-border {
+        border: none;
+    }
+
+    .team-mobile-content {
+        text-align: center;
+    }
+
+    .main-card-white {
+        padding: 25px;
+    }
+    .madhav-service-home-card {
+    padding: 30px !important;
+    min-height: auto !important;
+}
+.service-card{
+    height: auto !important;
+}
+.testimonial-area-1{
+    padding-bottom: 50px !important;
+}
+.madhav-why-content {
+    padding: 0px 10px 42px;
+    position: relative;
+}
+    .madhav-why-content h3 {
+        font-size: 22px;
+    }
+        .madhav-why-image img {
+        height: 190px;
+    }
+
+.madhav-contact {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.quality-img img {
+    width: 45px !important;
+}
+.madhav-manufacturing-sec5-card h4{
+font-size: 16px;
+}
+
+
+}
+
+
+
+/* Desktop Hover Dropdown */
+/* Desktop Hover Dropdown */
+@media (min-width: 992px) {
+    
+.madhav-manufacturing-sec5-arrow-card::after {
+    content: "\F285";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    right: -34px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2c67b7;
+    font-size: 40px;
+    z-index: 20;
+    font-weight: 900;
+    display: none;
+}
+    .hover-dropdown {
+        position: relative;
+    }
+
+    .hover-dropdown .madhav-dd {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        margin-top: 0;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+        padding: 0px 0;
+    }
+
+    .hover-dropdown:hover .madhav-dd {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:767px) {
+
+    .madhav-contact .contact-label-tag {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 0.5px;
+    display: block;
+    line-height: 120%;
+}
+    .banner-text-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-style1 .hero-text {
+        width: 100% !important;
+        margin-top: 22px;
+        margin-bottom: 28px;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 16px !important;
+    }
+
+    .madhav-manufacturing-title {
+        font-size: 24px;
+    }
+
+    .madhav-manufacturing-table td,
+    .madhav-manufacturing-table th {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .madhav-manufacturing-stage {
+        font-size: 15px;
+    }
+
+    .madhav-manufacturing-capacity {
+        font-size: 15px;
+    }
+
+    .madhav-service-home-card {
+        padding: 20px !important;
+        height: auto !important;
+    }
+
+    .madhav-sections-titles {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .home-sec-sector h2 {
+        font-size: 20px;
+    }
+
+    .testimonial-area-1 {
+        padding-bottom: 0px !important;
+    }
+
+    .madhav-why-image img {
+        height: auto;
+    }
+
+    .madhav-why-content {
+        padding: 0px 20px 30px;
+    }
+
+    .madhav-why-content h3 {
+        font-size: 20px;
+    }
+
+    .madhav-testi-card {
+        padding: 0px 20px;
+    }
+
+    .madhav-testi-divider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .madhav-testi-name {
+        color: #3475c2;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .madhav-testi-section {
+        padding: 40px 0px;
+    }
+
+
+
+
+
+
+
+    /* about page responsive */
+    .intro-section-bg {
+        padding: 50px 0px;
+    }
+
+    .inner-banners-title-2 {
+        font-size: 26px;
+        color: var(--blue);
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .intro-heading {
+        color: var(--blue) !important;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.35;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .home-page-title-font {
+        font-size: 26px;
+    }
+
+    .main-card-white {
+        padding: 25px;
+    }
+
+    .main-card-blue {
+        padding: 25px;
+    }
+
+    .section-main-title {
+        font-size: 34px;
+    }
+
+    .section-heading-block {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .value-card {
+        padding: 15px;
+    }
+
+    .footer-madhav {
+        padding: 40px 0 40px 0;
+        background-position: top left;
+        padding: 50px 0px;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+    }
+
+    .main-card-white {
+        padding: 20px;
+    }
+
+    .team-border {
+        border: none;
+    }
+
+    .team-mobile-content {
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .footer-madhav .email-link {
+        border-bottom: 2px solid #fad84a;
+        padding-bottom: 2px;
+        font-size: 16px;
+    }
+
+    .footer-madhav .footer-card {
+        padding: 40px 15px 15px 15px;
+    }
+.section-main-title-2{
+    font-size: 27px;
+}
+.madhav-careers-card {
+padding: 30px 10px;
+}
+.service-card_title {
+    margin-top: -0.3em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #246cbc;
+}
+.manufacturing-bg-sec3{
+    padding: 30px 20px;
+}
+.certi-card img {
+    width: 100% !important;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+.manufacturing-bg-sec3-app-content h5 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 120%;
+}
+/* Closed State */
+.accordion-button{
+    background: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+     margin-bottom: 2rem;
+    font-weight: 600;
+    /* padding: 22px 30px; */
+    box-shadow: none !important;
+    transition: all .3s ease;
+}
+.madhav-product2-number {
+    color: #fad84a;
+    font-weight: 700;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.madhav-product2-title {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.space-product-2{
+    padding: 10px 0px;
+}
+.madhav-manufacturing-sec5-arrow-card::after {
+    content: "\F285";
+    font-family: "bootstrap-icons";
+    position: absolute;
+    right: -34px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2c67b7;
+    font-size: 40px;
+    z-index: 20;
+    font-weight: 900;
+    display: none;
+}
+.egs-capabilities-app-content-other{
+    padding: 20px 30px;
+}
+.egs-capabilities-app-content-other h3{
+    font-size: 18px;
+}
+}
+
+
+.mu-career-modal{
+    border: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mu-career-modal .modal-header{
+    padding: 25px 30px 10px;
+}
+
+.mu-career-modal .modal-title{
+    color: #246cbc;
+    font-weight: 700;
+}
+
+.mu-career-modal .modal-body{
+    padding: 20px 30px 30px;
+}
+
+.mu-career-modal .form-control,
+.mu-career-modal .form-select{
+    min-height: 52px;
+    border-radius: 10px;
+}
+
+.mu-career-modal textarea.form-control{
+    min-height: 120px;
+}
+
+.mu-career-modal label{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.primary-mobile{
+        display: none;
+    }
+    .primary-desktop{
+         display: block;
+    }
+@media(max-width:767px){
+
+    .mu-career-modal .modal-body,
+    .mu-career-modal .modal-header{
+        padding-left:20px;
+        padding-right:20px;
+    }
+     .primary-mobile{
+        display: block;
+    }
+    .primary-desktop{
+         display: none;
+    }
+
+}
+
+
+
+
+.facts-home-new-madhav{
+    background:#fad84a;
+    width:220px;
+    min-height:240px;
+    padding:35px 30px;
+    position:relative;
+    z-index:2;
+}
+
+.facts-home-slide{
+    display:none;
+    animation: factsFade .5s ease;
+}
+
+.facts-home-slide.active{
+    display:block;
+}
+
+.facts-home-number{
+    /* font-size:60px; */
+    font-size: 40px;
+    line-height:1;
+    font-weight:800;
+    color:#246cbc;
+    margin-bottom:15px;
+}
+
+.facts-home-number small{
+    display:block;
+    font-size:22px;
+    font-weight:700;
+    color:#246cbc;
+    margin-top:8px;
+}
+
+.facts-home-text{
+    font-size:18px;
+    line-height:1.3;
+    color:#000;
+    font-weight:500;
+    margin-bottom:30px;
+}
+
+.facts-home-line{
+    width:70%;
+    height:3px;
+    background:#555;
+    position:absolute;
+    left:30px;
+    bottom:45px;
+}
+
+@keyframes factsFade{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:767px){
+.egs-capabilities-app-content{
+    padding: 20px;
+    
+}
+.egs-capabilities-app-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0px;
+}
+    .facts-home-new-madhav{
+        width:150px;
+        min-height:180px;
+        padding:15px 10px;
+    }
+
+    .facts-home-number{
+        font-size:30px;
+    }
+
+    .facts-home-text{
+        font-size:16px;
+    }
+    .madhav-manufacturing-sec1::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/manufacturing-1.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: -1;
+    display: none;
+}
+.hero-1{
+    height: 550px;
+}
+}
+@media (max-width:575px){
+    .egs-capabilities-app-content{
+    padding: 20px;
+    height: auto;
+}
+.facts-home-line {
+    width: 100%;
+    height: 3px;
+    background: #555;
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+}
+.hero-1 {
+height: 650px;
+}
+.hero-style1{
+    padding: 50px 0px;
+}
+}
+.map-heading{
+    color: #246cbc;
+    font-size: 24px;
+    font-weight: 600;
+    background: #f0f0f2;
+    margin: 0;
+    padding: 15px 0px;
+
+}
+
+/* vector section */
+.vision-bg-vector{
+  position: relative;
+}
+.intro-section-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/about-sec1.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: -1;
+}
+.vision-bg-vector::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/about-sec2.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.3;
+     z-index: 0;
+}
+
+.mission-bg-vector{
+   position: relative;
+
+
+} 
+.mission-bg-vector::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/about-sec3.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.3;
+     z-index: 0;
+}
+.egs-2::before{
+        content: "";
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/esg-sec-vector.png) no-repeat right top;
+    background-size: auto;
+    opacity: 0.3;
+     z-index: 0;
+}
+.esg-sec-3::before{
+        content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/esg-sec2-vector.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.3;
+     z-index: 0;
+}
+
+.esg-sec-4::before{
+        content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/esg-sec3-vector.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+.egs-governance::before{
+        content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/esg-sec4-vector.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+.egs-capabilities::before{
+    content: "";
+    position: absolute;
+    top: -200px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product.png) no-repeat right center;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.product-2-sec1::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product-1.png) no-repeat left center;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.product-sec-2vector{
+    position: relative;
+}
+.product-sec-2vector::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product-2.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.product-2-sec3::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product-3.1.png) no-repeat left top;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.product-2-sec3::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product-3.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.product-sec-4vector{
+     position: relative;
+}
+.product-sec-4vector::before{
+    content: "";
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product-4.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+
+.product-2-sec5::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product-5.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.madhav-manufacturing-sec1::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/manufacturing-1.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+  z-index: 0;
+}
+
+.madhav-manufacturing-sec1-1{
+    position: relative;
+}
+.madhav-manufacturing-sec1-1::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/manufacturing-2.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.madhav-manufacturing-sec5::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/manufacturing-3.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+  z-index: 0;
+}
+.madhav-manufacturing-sec6::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/manufacturing-4.png) no-repeat right center;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: -1;
+}
+.madhav-careers-new1::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/people1.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+     z-index: 0;
+}
+.madhav-careers-new2{
+    position: relative;
+}
+
+.madhav-careers-new2::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/people2.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: 0;
+}
+.madhav-careers-new3{
+     position: relative;
+}
+
+
+.madhav-careers-new3::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/people3.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: 0;
+}
+.madhav-careers-new4{
+     position: relative;
+}
+
+.madhav-careers-new4::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/people4.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: 0;
+}
+.vector-bg-1-contact{
+    position: relative;
+     z-index: 0;
+}
+.vector-bg-1-contact::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/contact1.png) no-repeat right top;
+    background-size: auto;
+    opacity: 0.2;
+    z-index:-1;
+}
+.vector-bg-2-contact{
+    position: relative;
+     z-index: 0;
+     overflow: hidden;
+}
+
+.vector-bg-2-contact::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/contact2.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: 0;
+}
+.primary-project-title h4{
+    color:#246cbc;
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+    .jd-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 30px;
+    /* min-height: 205px; */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s ease;
+}
+
+.jd-card:hover {
+    transform: translateY(-5px);
+}
+
+.jd-card h4 {
+    color: #246cbc;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.jd-btn,
+.jd-pdf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 10px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.jd-btn {
+    color: #246cbc;
+    border: 1px solid #246cbc;
+}
+
+.jd-btn:hover {
+    background: #246cbc;
+    color: #fff;
+}
+
+.jd-pdf-btn {
+    color: #ff4d4f;
+    border: 1px solid #ff4d4f;
+    margin-right: 1rem;
+}
+
+.jd-pdf-btn:hover {
+    background: #ff4d4f;
+    color: #fff;
+}
+#careerModal{
+    z-index: 1050;
+}
+#jdModal{
+    z-index: 1050;
+}
+@media all and (min-width: 991px) and (max-width: 1650px) { 
+
+.esg-sec-3::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/esg-sec2-vector.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.3;
+     z-index: 0;
+}
+
+.esg-sec-4::before{
+        content: "";
+    position: absolute;
+    top: 140px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/esg-sec3-vector.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.vision-bg-vector::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/about-sec2.png) no-repeat right bottom;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+.mission-bg-vector::before {
+    content: "";
+    position: absolute;
+    top: 110px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/about-sec3.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+.product-2-sec5::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/product-5.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: 0;
+}
+.madhav-manufacturing-sec5::before {
+    content: "";
+    position: absolute;
+    top: 83px;
+    right: 12px;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/manufacturing-3.png) no-repeat left bottom;
+    background-size: auto;
+    opacity: 0.3;
+    z-index: 0;
+}
+.vector-bg-1-contact::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/contact1.png) no-repeat right top;
+    background-size: auto;
+    opacity: 0.2;
+    z-index: -1;
+}
+}
+@media screen and (max-width:767px){
+
+.madhav-careers-new1::before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/madhav/vectors/people1.png) no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: 0;
+           max-width:200px;
+           max-height: 200px;
+        
+}
+.madhav-careers-new2::before{
+       content: "";
+        position: absolute;
+        bottom: -6px;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/madhav/vectors/people2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.2;
+        z-index: -1;
+        max-width:200px;
+    }
+    
+  .vector-bg-1-contact::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        right: 0;
+        width: 150px;
+        height: 150px;
+        background-image: url(../img/madhav/vectors/contact1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.2;
+        z-index: -1;
+    }
+    .about-banners {
+        height: 300px;
+        background: url(../img/madhav/banners/banner-about-new.jpg) center center / cover no-repeat;
+        position: relative;
+        background-position: center;
+    }
+    .product1-banners {
+         height: 350px;
+        }
+    .manufacturing-banners{
+        height: 350px;
+    }
+.people-banners{
+    height: 300px;
+}
+.contact-banners{
+    height: 350px;
+}
+.bg-color-what-we-do {
+    background-color: #d5d5d55c;
+    padding: 40px 0px 50px 0px;
+}
+  
+}
+
