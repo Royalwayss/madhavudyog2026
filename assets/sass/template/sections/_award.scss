@@ -1,0 +1,66 @@
+/*----------------------------------------------
+    # Award Area 1
+----------------------------------------------*/
+.award-area-1 {
+    background-size: 100% calc(100% - 100px);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.award-card {
+    background: $smoke-color5;
+    border: 2px solid $smoke-color5;
+    padding: 58px 30px 30px 30px;
+    position: relative;
+    transition: 0.4s;
+    .award-card-bg-shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .award-card-year {
+        position: absolute;
+        right: 30px;
+        top: 24px;
+        text-align: center;
+        font-size: 18px;
+        span {
+            font-size: 48px;
+            font-weight: 600;
+            display: block;
+            opacity: 0.06;
+            line-height: normal;
+            margin-bottom: -20px;
+
+        }
+    }
+    .award-card-thumb {
+        margin-bottom: 30px;
+        height: 70px;
+        img {
+            transition: 0.4s;
+        }
+    }
+    .award-card_title {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    .award-card_text {
+        margin-bottom: 70px;
+    }
+    .award-card-tag {
+        display: inline-block;
+        background: $white-color;
+        padding: 5px 20px;
+
+    }
+    &:hover {
+        border-color: $theme-color;
+        .award-card-thumb {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+/*Footer 1***************/
+.footer-wrapper {
+    background-color: $title-color;
+}
+.footer-top-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0px;
+    border-radius: 0px;
+    position: relative;
+    z-index: 3;
+    gap: 40px;
+    border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+    .subscribe-box {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .subscribe-box_text {
+            max-width: 355px;
+            text-align: end;
+            margin-bottom: 0;
+        }
+    }
+    .newsletter-form {
+        flex: none;
+        min-width: 464px;
+        display: flex;
+        background: rgba(66, 66, 66, 0.85);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        input {
+            margin-bottom: 0;
+        }
+        .btn {
+            flex: none;
+            height: 50px;
+            right: 5px;
+            top: 5px;
+        }
+    }
+    @include lg {
+        display: block;
+        text-align: center;
+        .subscribe-box {
+            display: block;
+            margin-top: 30px;
+            .subscribe-box_text {
+                text-align: center;
+                max-width: none;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    @include xs {
+        .newsletter-form {
+            min-width: inherit;
+        }
+    }
+    @include vxs {
+        .newsletter-form {
+            display: block;
+            .btn {
+                top: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+} 
+.widget-area {
+    padding: 80px 0 30px;
+}
+.copyright-wrap {
+    padding: 28px 0;
+    background: transparent;
+    border-top: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+}
+.copyright-text {
+    margin: 0;
+    color: rgba($color: #ffffff, $alpha: 0.8);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: $body-font;
+    a {
+        color: $white-color;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+.footer-links {
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $body-font;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+/*Footer 1***************/
+.footer-layout1 {
+    position: relative;
+    background-attachment: fixed;
+    --body-color: #CBCCCD;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #1F1F1F;
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+}
+/*Footer 2***************/
+.footer-layout2 {
+    border-top: 1px solid rgba($color: #ffffff, $alpha: 0.15);
+    --body-color: rgba(255,255,255,0.9);
+    .widget-divider {
+        background-color: rgba($color: #ffffff, $alpha: 0.15);
+        height: calc(100% + 110px);
+        width: 1px;
+        top: -80px;
+        position: relative;
+        @include ml {
+            display: none;
+        }
+    }
+}
+
+/*Footer 3***************/
+.footer-layout3 {
+    position: relative;
+    background-attachment: fixed;
+    --body-color: #CBCCCD;
+    z-index: 1;
+    padding-top: 125px;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #1F1F1F;
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+}
+
+/*Footer 4***************/
+.footer-layout4 {
+    position: relative;
+    background-attachment: fixed;
+    --body-color: #CBCCCD;
+    z-index: 1;
+    padding-top: 150px;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #1F1F1F;
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+}

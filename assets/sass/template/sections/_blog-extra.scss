@@ -1,0 +1,176 @@
+/* Blog Card ---------------------------------- */
+.blog-card {
+    position: relative;
+    .blog-title {
+        font-weight: 600;
+        font-size: 32px;
+        color: $title-color;
+        margin-bottom: 15px;
+        margin-top: 12px;
+        a {
+            background-image: linear-gradient(to left, $theme-color, $theme-color);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0 2px;
+            transition: 0.6s;
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
+    }
+    .blog-text {
+        margin-bottom: 22px;
+    }
+    .blog-img {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0px;
+        img {
+            width: 100%;
+            border-radius: 0px;
+            transition: 0.4s ease-in-out;
+            min-height: 280px;
+            object-fit: cover;
+        }
+        .blog-date {
+            position: absolute;
+            left: 20px;
+            top: 0px;
+            a {
+                background: $theme-color;
+                height: 70px;
+                width: 70px;
+                border-radius: 0px;
+                text-align: center;
+                display: inline-block;
+                color: $white-color;
+                font-family: $body-font;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 400;
+                padding: 12px 10px 11px;
+                span {
+                    display: block;
+                    font-size: 36px;
+                    font-weight: 600;
+                    font-family: $title-font;
+                    margin-bottom: 2px;
+                }
+            }
+            .year {
+                background: $title-color;
+                text-align: center;
+                font-size: 10px;
+                font-weight: 600;
+                font-family: $title-font;
+                color: rgba($color: #ffffff, $alpha: 0.6);
+                letter-spacing: 4px;
+                height: 16px;
+                line-height: 16px;
+            }
+        }
+    }
+    .blog-content {
+        padding: 30px 0 0 0;
+        position: relative;
+        z-index: 2;
+        transition: 0.4s;
+        border-radius: 0;
+    }
+    .btn {
+        padding: 13px 25px;
+    }
+    &:hover {
+        .blog-img {
+            img {
+                transform: scale(1.08);
+            }
+        }
+    }
+    @include xl {
+        .blog-title {
+            font-size: 24px;
+        }
+    }
+}  
+
+
+/* Blog Card 2---------------------------------- */
+.blog-card.style2 {
+    padding: 30px;
+    background: #F7F7F7;
+    transition: 0.4s;
+    .blog-title {
+        font-size: 24px;
+    }
+    .blog-text {
+        transition: 0.4s;
+    }
+    &:hover {
+        background: $title-color;
+        .blog-meta span, .blog-meta a {
+            color: $white-color;
+            &:before {
+                background: $white-color;
+            }
+        }
+        .blog-title a {
+            color: $white-color;
+            background-image: linear-gradient(to left, $white-color, $white-color);
+        }
+        .blog-text {
+            color: $white-color;
+            opacity: 0.9;
+        }
+    }
+}
+
+/* Blog Card 4---------------------------------- */
+.blog-card.style4 {
+    .blog-img .blog-date {
+        left: 0;
+        a {
+            padding: 25px 10px;
+            height: 100px;
+            width: 80px;
+            span {
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .blog-meta span, .blog-meta a {
+        text-transform: capitalize;
+    }
+    .blog-title {
+        margin-bottom: -0.3em;
+        a {
+            background-image: linear-gradient(to left, $title-color, $title-color);
+            background-size: 0 1px;
+            &:hover {
+                color: $title-color;
+                background-size: 100% 1px;
+            }
+        }
+    }
+}
+
+/* Blog Card 5---------------------------------- */
+.blog-card.style5 {
+    .blog-img .blog-date {
+        top: 20px;
+    }
+    .blog-content {
+        background: $smoke-color3;
+        padding: 30px;
+    }
+    .blog-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .blog-meta span, .blog-meta a {
+        font-size: 15px;
+        font-weight: 600;
+        font-family: $title-font;
+    }
+}

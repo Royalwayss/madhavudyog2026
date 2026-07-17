@@ -1,0 +1,225 @@
+/* Process Area 1 ---------------------------------- */
+.process_shape_1-1 {
+    width: 375px;
+    height: 64px;
+    background: $theme-color;
+    top: 0;
+    right: 30%;
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 75px) 100%, 0% 100%);
+    z-index: 1;
+}
+.process_shape_1-2 {
+    width: 315px;
+    height: 43px;
+    background: $theme-color;
+    bottom: 0;
+    left: -10%;
+    clip-path: polygon(0 0, 100% 0%, calc(100% - 16px) 100%, 0% 100%);
+    z-index: 1;
+}
+.process_shape_1-3 {
+    z-index: 1;
+}
+.process-card-wrap {
+    margin-top: -130px;
+    margin-bottom: 130px;
+    transform: translate(0, 130px);
+    position: relative;
+    z-index: 2;
+}
+.process-card {
+    background: $white-color;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 4px 18.4px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border: 2px solid;
+        border-image: linear-gradient(180deg, $theme-color, transparent) 1;
+        transition: 0.4s;
+        opacity: 0;
+    }
+    .process-card-number {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: $title-font;
+        color: rgba($color: #000000, $alpha: 0.12);
+        span {
+            display: inline-block;
+            background: $title-color;
+            width: 42px;
+            height: 48px;
+            line-height: 48px;
+            color: $white-color;
+            font-size: 20px;
+            text-align: center;
+            transition: 0.4s;
+        }
+    }
+    .process-card-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        @include ml {
+            font-size: 22px;
+        }
+        @include md {
+            font-size: 26px;
+        }
+        @include sm {
+            font-size: 22px;
+        }
+    }
+    .process-card-text {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $title-font;
+        margin-bottom: -0.5em;
+    }
+    &.process-card-center {
+        margin-top: 77px;
+    }
+    &:hover {
+        box-shadow: 0px 4px 18.4px rgba(234, 85, 1, 0.2);
+        &:after {
+            opacity: 1;
+        }
+        .process-card-number {
+            span {
+                background: $theme-color;
+            }
+        }
+    }
+}
+
+/* Process Area 2 ---------------------------------- */
+.process_shape_2-1 {
+    @include xxl {
+        display: none;
+    }
+}
+.process-grid-list {
+    position: relative;
+    .process-grid-list-bg-text {
+        font-size: 250px;
+        font-weight: 600;
+        color: $title-color;
+        font-family: $title-font;
+        letter-spacing: -0.015em;
+        text-transform: uppercase;
+        opacity: 0.03;
+        transform: rotate(-90deg) translate(50%, -100%);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform-origin: right top;
+        z-index: -1;
+        @include ml {
+            font-size: 210px;
+        }
+        @include lg {
+            font-size: 180px;
+        }
+        @include md {
+            font-size: 250px;
+        }
+        @include sm {
+            font-size: 200px;
+        }
+        @include xs {
+            display: none;
+        }
+    }
+    .process-grid {
+        --left-space: 50px;
+        ~ .process-grid {
+            margin-left: var(--left-space);
+            ~ .process-grid {
+                margin-left: calc(var(--left-space) * 2);
+                ~ .process-grid {
+                    margin-left: calc(var(--left-space) * 3);
+                }
+            }
+        }
+        @include ml {
+            --left-space: 40px;
+        }
+        @include lg {
+            --left-space: 0px;
+        }
+    }
+    &.style2 {
+        .process-grid-list-bg-text {
+            font-size: 180px;
+        }
+    }
+}
+.process-grid {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: 60px;
+    }
+    .process-grid-number {
+        flex: none;
+        font-size: 80px;
+        font-weight: 600;
+        font-family: $title-font;
+        margin-bottom: 0;
+        line-height: 1;
+        opacity: 0.06;
+        letter-spacing: -0.015em;
+        position: relative;
+        transition: 0.4s;
+        color: $title-color;
+        padding-left: 17px;
+        margin-top: -0.3em;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 40px;
+            height: 50px;
+            background: $theme-color;
+            opacity: 0.1;
+            z-index: -1;
+        }
+    }
+    .process-grid-title {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $title-font;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .process-grid-text {
+        margin-bottom: -0.3em;
+        max-width: 357px;
+    }
+    &:hover {
+        .process-grid-number {
+            opacity: 1;
+            color: $theme-color;
+        }
+    }
+    @include xs {
+        flex-wrap: wrap;
+        gap: 20px;
+        .process-grid-number {
+            font-size: 60px;
+            padding-left: 0;
+        }
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+}

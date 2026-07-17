@@ -1,0 +1,114 @@
+/* Video 1 ---------------------------------- */ 
+.video-area-1 {
+    padding: 300px 0;
+    background-attachment: fixed;
+    @include xxl {
+        padding: 250px 0;
+    }
+    @include ml {
+        .play-btn-wrap.style2 {
+            justify-content: center;
+        }
+    }
+    @include lg {
+        padding: 200px 0;
+    }
+    @include sm {
+        padding: 150px 0;
+    }
+    @include xs {
+        padding: 120px 0;
+    }
+}
+.video-wrap {
+    position: relative;
+    .play-btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Video 2 ---------------------------------- */ 
+.video-wrap2 {
+    padding: 80px 115px 80px 0;
+    background: $smoke-color5;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+    .play-btn-wrap.style2 {
+        max-width: 438px;
+        margin-left: auto;
+        color: $title-color;
+        gap: 50px;
+        align-items: center;
+        line-height: normal;
+        @include lg {
+            max-width: 300px;
+        }
+        .video-text {
+            font-size: 52px;
+            line-height: 1.057em;
+            opacity: 0.2;
+            transition: 0.4s;
+            @include lg {
+                font-size: 32px;
+            }
+            @include vxs {
+                font-size: 24px;
+            }
+        }
+    }
+    .play-btn.style8 {
+        i {
+            --icon-size: 64px;
+            background: $title-color;
+            color: $theme-color;
+        }
+        &:after,
+        &:before {
+            border-color: rgba(3, 5, 25, 0.04);
+        }
+    } 
+    &:hover {
+        .play-btn-wrap.style2 {
+            .video-text {
+                opacity: 1;
+            }
+        }
+    }
+    @include ml {
+        padding: 80px 80px 80px 0;
+    }
+    @include md {
+        padding: 60px 60px 60px 0;
+        background-position: 0 bottom;
+    }
+    @include sm {
+        background-image: none !important;
+        padding: 60px;
+        .play-btn-wrap.style2 {
+            margin-right: auto;
+        }
+    }
+    @include xs {
+        padding: 50px;
+    }
+    @include vxs {
+        padding: 40px;
+        .play-btn-wrap.style2 {
+            gap: 30px;
+        }
+    }
+}
+.video_thumb2-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: -420px;
+    width: 45.3%;
+    @include md {
+        display: none;
+    }
+}

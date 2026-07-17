@@ -1,0 +1,53 @@
+/* Client 1 ---------------------------------- */
+.client-area-1 {
+    z-index: 1;
+    background-attachment: fixed;
+    &:before {
+        z-index: -1;
+    }
+}
+.client_shape_1-1 {
+    @include xxl {
+        display: none;
+    }
+}
+.client-logo {
+    transition: 0.4s;
+    opacity: 0.6;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        right: -12px;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: rgba($color: #ffffff, $alpha: 0.15);
+    }
+    img {
+        filter: brightness(9);
+    }
+    &:hover {
+        opacity: 1;
+    }
+    @include sm {
+        &:after {
+            display: none;
+        }
+    }
+}
+.client-slider1 {
+    margin: 0 -1px;
+    @include sm {
+        margin: 0 0;
+    }
+}
+
+/* Client 2 ---------------------------------- */
+.client-slider2 {
+    .client-logo {
+        img {
+            filter: none;
+        }
+    }
+}

@@ -1,0 +1,443 @@
+/* Portfolio 1 ---------------------------------- */
+.portfolio-card {
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+    padding-bottom: 30px;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0 0 30px 0;
+        background: linear-gradient(190.47deg, rgba(2, 2, 18, 0) 5.21%, rgba(2, 2, 18, 0.8) 92.2%);
+    }
+    .portfolio-card-thumb {
+        position: relative;
+        border-radius: 0px;
+        img {
+            border-radius: 0px;
+            width: 100%;
+        }
+        .icon-btn {
+            position: absolute;
+            right: 40px;
+            top: 0px;
+            background: $white-color;
+            color: $theme-color;
+            z-index: 1;
+            border-radius: 50%;
+            opacity: 0;            
+        }
+    }
+    .portfolio-card-details {
+        position: absolute;
+        z-index: 1;
+        bottom: -100px;
+        left: 0;
+        right: 0;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0;
+        padding: 60px;
+        flex-wrap: wrap;
+        transition: 0.4s;
+        opacity: 0;
+        gap: 30px;
+    }
+    .portfolio-card-subtitle {
+        color: $white-color;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: $title-font;
+        margin-bottom: 17px;
+        padding: 2px 10px;
+        display: inline-block;
+        text-transform: uppercase;
+        background: rgba($color: #ffffff, $alpha: 0.29);
+    }
+    .portfolio-card-title {
+        font-weight: 700;
+        font-size: 36px;
+        margin-bottom: 2px;
+        a {
+            color: $white-color;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    .portofolio-card-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: $white-color;
+        opacity: 0.9;
+        margin-bottom: -0.3em;
+    }
+    .btn {
+        position: absolute;
+        right: 40px;
+        bottom: -32px;
+        z-index: 2;
+        opacity: 0;
+        transition: 0.4s;
+        border: 2px solid $white-color;
+    }
+    @include md {
+        .portfolio-card-details {
+            padding: 40px;
+        }
+    }
+    @include sm {
+        .portfolio-card-details {
+            padding: 30px 30px 60px 30px;
+        }
+        .portfolio-card-title {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .portfolio-card-thumb .icon-btn {
+            right: 30px;
+        }
+        .btn {
+            right: auto;
+            left: 30px;
+        }
+        .portfolio-card-thumb {
+            img {
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.portfolio-slider1 {
+    .slick-current {
+        .portfolio-card {
+            .portfolio-card-thumb {
+                .icon-btn {
+                    opacity: 1;
+                    top: 40px;
+                }
+            }
+            .portfolio-card-details {
+                bottom: 30px;
+                opacity: 1;
+            }
+            .btn {
+                opacity: 1;
+                bottom: 0;
+            }
+            @include sm {
+                .portfolio-card-thumb .icon-btn {
+                    top: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* Portfolio 2 ---------------------------------- */
+.portfolio-card.style2 {
+    border-bottom: 1px solid rgba($color: #15161C, $alpha: 0.6);
+    transition: 0.4s;
+    padding-bottom: 0;
+    background: $smoke-color;
+    &:after {
+        display: none;
+    }
+    .portfolio-card-thumb {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: $theme-color;
+            opacity: 0;
+            transition: 0.4s;
+        }
+        .icon-btn {
+            background: $white-color;
+            border-radius: 0;
+            opacity: 0;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, calc(-50% - 20px));
+            &:hover {
+                background: $title-color;
+                color: $white-color;
+            }
+        }
+        .portfolio-card-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: $title-color;
+            text-align: center;
+            font-size: 18px;
+            color: rgba($color: #ffffff, $alpha: 0.8);
+            transition: 0.4s;
+        }
+    }    
+    .portfolio-card-details {
+        position: initial;
+        opacity: 1;
+        padding: 0px 25px 25px;
+        display: block;
+    }
+    .portfolio-card-subtitle {
+        background: $theme-color;
+        color: $white-color;
+        transform: translate(0, -50%);
+        margin-bottom: 12px;
+    }
+    .portfolio-card-title {
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        a {
+            color: $title-color;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+        @include ml {
+            font-size: 22px;
+        }
+    }
+    .portofolio-card-text {
+        display: block;
+        color: $body-color;
+        opacity: 0.9;
+        margin-bottom: 20px;
+    }
+    &:hover {
+        border-color: $theme-color;
+        .portfolio-card-thumb {
+            &:after {
+                opacity: 0.5;
+            }
+            .icon-btn {
+                opacity: 1;
+                transform: translate(50%, -50%);
+            }
+            .portfolio-card-number {
+                opacity: 0;
+            }
+        }
+        .portfolio-card-title {
+            a {
+                color: $theme-color;
+            }
+        }
+        .btn-with-icon {
+            color: $title-color;
+        }
+    }
+}
+
+/* Portfolio 3 ---------------------------------- */
+.portfolio-slider3 {
+    .global-carousel {
+        margin-right: -300px;
+        .slick-slide.slick-current {
+            .portfolio-card {
+                .portfolio-card-thumb {
+                    .icon-btn {
+                        opacity: 1;
+                        top: 40px;
+                    }
+                }
+                .portfolio-card-details {
+                    bottom: 30px;
+                    opacity: 1;
+                }
+                .btn {
+                    opacity: 1;
+                    bottom: 0;
+                }
+            }
+        }
+        @include lg {
+            margin-right: -12px;
+        }
+    }
+}
+
+/* Portfolio 4 ---------------------------------- */
+.portfolio-card.style4 {
+    padding: 0;
+    &:after {
+        display: none;
+    }
+    .portfolio-card-thumb {
+        img {
+            width: 100%;
+        }
+        .portfolio-card-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: $smoke-color5;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 0 9px;
+            color: $body-color;
+            z-index: 1;
+        }
+    }
+    .portfolio-card-details {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, calc(-50% - 20px));
+        padding: 0;
+        display: inline-block;
+        width: max-content;
+        height: fit-content;
+        .portfolio-card-subtitle {
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+            background: $theme-color;
+            margin-bottom: 5px;
+        }
+        .portfolio-card-title {
+            font-size: 24px;
+            font-weight: 600;
+            background: $white-color;
+            padding: 14px 55px 14px 30px;
+            margin-bottom: 0;
+            a {
+                color: $title-color;
+            }
+            &:hover {
+                a {
+                    color: $theme-color;
+                }
+            }
+            @include md {
+                font-size: 20px;
+            }
+        }
+    }
+    .icon-btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: $white-color;
+        color: $theme-color;
+        &:hover {
+            background: $theme-color;
+            color: $white-color;
+        }
+    }
+    &:hover {
+        .portfolio-card-details {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%);
+        }
+    }
+    @include vxs {
+        .portfolio-card-details {
+            .portfolio-card-title {
+                padding: 14px 20px 14px 20px;
+            }
+        }
+    }
+}
+
+/* Portfolio 5 ---------------------------------- */
+.portfolio-card.style5 {
+    padding: 0;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(110.38deg, #15161C 11.12%, rgba(21, 22, 28, 0.1) 75.6%);
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .portfolio-card-details {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+        top: 0;
+        flex-wrap: wrap;
+        max-width: 420px;
+        padding: 40px;
+        .media-left {
+            margin-bottom: auto;
+            opacity: 0;
+            transform: translate(0, 30px);
+            transition: 0.4s;
+        }
+        .portfolio-card-title {
+            font-weight: 600;
+            @include ml {
+                font-size: 30px;
+            }
+            @include lg {
+                font-size: 24px;
+            }
+        }
+    }
+    .btn-group {
+        flex: none;
+        margin-top: auto;
+    }
+    .btn {
+        position: relative;
+        border: 0;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        transform: translate(0, -30px);
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+        .portfolio-card-details {
+            .media-left {
+                transform: none;
+                opacity: 1;
+            }
+        }
+        .btn {
+            opacity: 1;
+            transform: none;
+        }
+    }
+    @include lg {
+        .portfolio-card-details {
+            max-width: 350px;
+            padding: 30px;
+        }
+        .btn {
+            padding: 15px 30px;
+        }
+    }
+}
+
+/* Project page ---------------------------------- */
+.project-page-thumb {
+    position: relative;
+    .sidebar-area {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        @include md {
+            position: initial;
+        }
+    }
+}

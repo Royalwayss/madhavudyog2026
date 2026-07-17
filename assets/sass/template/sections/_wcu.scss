@@ -1,0 +1,278 @@
+/*----------------------------------------------
+    # why choose us area style here
+----------------------------------------------*/
+.wcu-card-wrap {
+    max-width: 364px;
+    text-align: start;
+    margin: 0 42px;
+    position: relative;
+    z-index: 2;
+    &.left-align {
+        text-align: end;
+        .wcu-card {
+            flex-direction: row-reverse;
+        }
+    }
+    @include ml {
+        margin: 0;
+    }
+}
+.wcu-card {
+    display: inline-flex;
+    gap: 25px;
+    &:not(:last-child) {
+        margin-bottom: 55px;
+    }
+    &-icon {
+        flex: none;
+        img {
+            transition: 0.4s;
+        }
+    }
+    .wcu-card-title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        margin-top: -0.2em;
+    }
+    .wcu-card-text {
+        margin-bottom: -0.5em;
+    }
+    &:hover {
+        .wcu-card-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+@include lg {
+    .wcu-card-wrap {
+        max-width: none;
+        &.left-align {
+            text-align: start;
+            .wcu-card {
+                flex-direction: row;
+                
+            }
+        }
+    }
+}
+@include md {
+    .wcu-card-wrap.left-align {
+        text-align: start;
+    }
+    .wcu-card .wcu-card-text {
+        font-size: 15px;
+    }
+}
+@include sm {
+    .wcu-card:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+/* Why Area 3 ---------------------------------- */
+.why-area-3 {
+    position: relative;
+}
+.why-sec-bg3-1 {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 184px) calc(100% - 75px), 0% 100%);
+    &:after {
+        content: '';
+        position: absolute;
+        background: linear-gradient(277.18deg, #F7F7F7 62.73%, rgba(247, 247, 247, 0) 97.7%);
+        inset: 0;
+    }
+    @include ml {
+        clip-path: none;
+    }
+    @include md {
+        background-image: none !important;
+        &:after {
+            background: linear-gradient(to bottom, #F7F7F7 62.73%, rgba(247, 247, 247, 0) 97.7%);
+        }
+    }
+}
+.why-tab-wrap {
+    gap: 25px;
+    margin-right: 56px;
+    .nav-item {
+        width: 100%;
+        .nav-link {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: $title-font;
+            background: $white-color;
+            color: $body-color;
+            border: 0;
+            filter: drop-shadow(0px 8px 25px rgba(21, 22, 28, 0.02));
+            width: 100%;
+            text-align: start;
+            padding: 19px 30px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 0;
+            i {
+                font-size: 24px;
+            }
+            &.active {
+                background: $theme-color;
+                color: $white-color;
+                border-radius: 10px 0 10px 10px;
+                i {
+                    &:before {
+                        content: "\ea70";
+                    }
+                }
+            }
+        }
+    }
+    @include ml {
+        margin-right: 0;
+    }
+    @include lg {
+        .nav-item .nav-link.active {
+            border-radius: 10px;
+        }
+    }
+    @include xs {
+        .nav-item .nav-link {
+            padding: 12px 20px;
+        }
+    }
+}
+.why-thumb-wrap3-1 {
+    background: $title-color;
+    padding: 40px;
+    display: inline-block;
+    .why-text-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+        margin-top: 45px;
+        opacity: 0.5;
+        .title {
+            color: $white-color;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .line {
+            width: -webkit-fill-available;
+            height: 1px;
+            display: block;
+            background: $white-color;
+        }
+        .number {
+            font-size: 50px;
+            font-weight: 700;
+            color: $white-color;
+
+        }
+    }
+    @include xs {
+        padding: 30px;
+        .why-text-wrap {
+            margin-top: 35px;
+            .number {
+                font-size: 40px;
+            }
+        }
+    }
+}
+.why-content-wrap {
+    .title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 33px;
+    }
+    .subtitle {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+}
+
+/*skill-feature 1***********************/
+.skill-feature {
+    &:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    .skill-feature_title {
+        font-size: 16px;
+        font-weight: 600;
+        color: $title-color;
+        margin-bottom: 16px;
+    }
+    .progress {
+        background: #EFEFEF;
+        height: 8px;
+        position: relative;
+        overflow: visible;
+        .progress-bar {
+            background: $theme-color;
+            border-radius: 10px;
+        }
+        .progress-value {
+            position: absolute;
+            top: -38px;
+            right: 0;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: $title-font;
+            color: $title-color;
+        }
+    }
+}
+
+/************** wcu-thumb-wrap ***************/
+.wcu-thumb-wrap {
+	position: relative;
+	display: flex;
+    justify-content: end;
+	img {
+		border-radius: 10px;
+	}
+	.img-1 {
+		height: fit-content;
+	}
+	.img-2 {
+		margin: 120px 0 0 30px;
+	}
+    @include lg {
+        justify-content: start;
+    }
+    @include sm {
+        display: block;
+        img {
+            width: -webkit-fill-available;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .img-1 {
+            margin-right: 60px;
+        }
+        .img-2 {
+            margin: 30px 0 0 60px;
+        }
+    }
+}
+
+/* Why Area 4 ---------------------------------- */
+.wcu-card-wrap4 {
+    .wcu-card:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .wcu-card {
+        .wcu-card-text {
+            color: $white-color;
+            opacity: 0.8;
+        }
+    }
+}

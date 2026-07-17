@@ -1,0 +1,382 @@
+/* Service Card ---------------------------------- */
+.service-area-1 {
+    padding-bottom: 300px;
+    @include md {
+        padding-bottom: 280px;
+    }
+}
+.service-card {
+    background: $white-color;
+    border-radius: 0px;
+    padding: 30px 60px 0px 90px;
+    border: 2px solid $white-color;
+    position: relative;
+    margin-bottom: 25px;
+    transition: 0.4s;
+    &:after {
+        content: '';
+        position: absolute;
+        right: 40px;
+        top: 65px;
+        width: 157px;
+        height: 1px;
+        background: $title-color;
+        opacity: 0.1;
+    }
+    &-shadow-text {
+        position: absolute;
+        transform: rotate(-90deg) translate(-50%, 0);
+        font-size: 36px;
+        font-weight: 600;
+        font-family: $title-font;
+        color: transparent;
+        -webkit-text-stroke: 1px $title-color;
+        transform-origin: left top;
+        top: 50%;
+        left: 35px;
+        opacity: 0.15;
+    }
+    &_content {
+        padding: 0 0px 0 10px;
+    }
+    &_icon {
+        display: inline-block;
+        margin-bottom: 35px;
+        position: relative;
+        padding: 10px 0 0 10px;
+        margin-left: -10px;
+        img {
+            transition: 0.4s;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 52px;
+            width: 52px;
+            border-radius: 50%;
+            background: $theme-color;
+            opacity: 0.1;
+        }
+    }
+    &_title {
+        margin-top: -0.3em;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 24px;
+        a {
+            color: $title-color;
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    &_text {
+        font-size: 16px;
+        margin-bottom: 23px;
+    }
+    .btn-wrap {
+        justify-content: end;
+        position: relative;
+        transform: translate(0, 25px);
+        margin-top: -25px;
+        margin-right: -20px;
+        .icon-btn {
+            background: $smoke-color2;
+            color: $theme-color;
+        }
+        .btn {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 15px 24px;
+            opacity: 0;
+            transition: 0.4s;
+        }
+    }
+    
+    &:hover {
+        border-color: $theme-color;
+        .service-card_icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+        
+        .btn-wrap {
+            .btn {
+                opacity: 1;
+            }
+        }
+    }
+    @include ml {
+        padding: 30px 40px 0px 70px;
+        .service-card:after {
+            right: 35px;
+        }
+        .service-card-shadow-text {
+            font-size: 30px;
+            left: 25px;
+        }
+        .btn-wrap {
+            margin-right: -5px;
+        }    
+    }
+}
+
+
+/* Service Card 02 ---------------------------------- */
+.service-card-wrap2 {
+    margin-top: 120px;
+    @include lg {
+        margin-top: 30px;
+    }
+}
+.service-card-list {
+    --step-gap: -135px;
+    &:nth-child(6),
+    &:nth-child(2) {
+        margin-top: var(--step-gap);
+    }
+    &:nth-child(7),
+    &:nth-child(3) {
+        margin-top: calc(var(--step-gap) * 2);
+    }
+    &:nth-child(8),
+    &:nth-child(4) {
+        margin-top: calc(var(--step-gap) * 3);
+    }
+    @include ml {
+        --step-gap: -130px;
+    }
+    @include lg {
+        --step-gap: 0px;
+    }
+}
+.service-card.style2 {
+    padding: 30px 30px 40px;
+    margin-bottom: 0;
+    border-color: rgba($color: #15161C, $alpha: 0.15);
+    margin-top: 30px;
+    &:after {
+        display: none;
+    }
+    .service-card_content {
+        padding: 0;
+    }
+    .service-card-number {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $title-font;
+        text-align: end;
+        margin-top: -0.5em;
+    }
+    .service-card_icon {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 30px;
+        &:after {
+            display: none;
+        }
+    }
+    .service-card_title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .service-card_text {
+        margin-bottom: 52px;
+        transition: 0.4s;
+    }
+    .btn-wrap {
+        transform: none;
+        justify-content: start;
+        margin: 0;
+    }
+    &:hover {
+        background: $title-color;
+        .service-card_title {
+            a {
+                color: $white-color;
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        .service-card_text {
+            color: $white-color;
+            opacity: 0.9;
+        }
+        .btn-with-icon {
+            color: $white-color;
+            .btn-icon {
+                background: $theme-color;
+                color: $white-color;
+            }
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+    @include md {
+        .service-card_title {
+            font-size: 25px;
+        }
+    }
+    @include sm {
+        .service-card_title {
+            font-size: 22px;
+        }
+    }
+}
+
+/* Service Card 03 ---------------------------------- */
+.service-card.style3 {
+    background: #F7F7F7;
+}
+
+/* Service Card 4 ---------------------------------- */
+.service-card.style4 {
+    background: #FAFAFA;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0;
+    &:after {
+        display: none;
+    }
+    .service-card_icon {
+        flex: none;
+        margin-bottom: 0;
+    }
+    .service-card_text {
+        margin-bottom: -0.3em;
+    }
+    .service-card_content {
+        padding-left: 0;
+        max-width: 283px;
+    }
+    @include vxs {
+        flex-wrap: wrap;
+    }
+}
+
+/* Service Card 5 ---------------------------------- */
+.service-card.style5 {
+    padding: 0;
+    border: 0;
+    margin-bottom: 0;
+    position: relative;
+    max-width: 348px;
+    @include lg {
+        max-width: none;
+    }
+    &:after {
+        display: none;
+    }
+    .service-card-number {
+        font-size: 200px;
+        font-weight: 600;
+        font-family: $title-font;
+        color: $theme-color;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        opacity: 0.1;
+        @include md {
+            font-size: 150px;
+        }
+    }
+    .service-card_icon {
+        filter: grayscale(1);
+        transition: 0.4s;
+        padding: 0;
+        margin-left: 0;
+        &:after {
+            display: none;
+        }
+    }
+    .service-card_content {
+        padding: 0;
+    }
+    .service-card_title {
+        font-size: 36px;
+        font-weight: 600;
+        @include xs {
+            font-size: 24px;
+        }
+    }
+    .service-card_text {
+        margin-bottom: -0.5em;
+    }
+    &:hover {
+        .service-card_icon {
+            filter: none;
+        }
+    }
+}
+
+/* Service Card 6 ---------------------------------- */
+.service-area-6 {
+    max-width: 1720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-slider6 {
+    .slick-dots {
+        button:before {
+            background: $white-color;
+        }
+    }
+}
+.service-card.style6 {
+    background-size: 100% 100%;
+    padding: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    &:after {
+        display: none;
+    }
+    .service-card-number {
+        font-size: 15px;
+        font-weight: 600;
+        font-family: $title-font;
+        color: $body-color;
+        background: $smoke-color5;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 0px 9px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .service-card-thumb {
+        margin-bottom: -50px;
+        display: inline-block;
+        img {
+            transition: 0.4s;
+        }
+    }
+    .service-card_content {
+        padding: 0;
+        text-align: start;
+    }
+    .service-card_icon {
+        margin-left: 0;
+        padding: 0;
+        &:after {
+            display: none;
+        }
+    }    
+    &:hover {
+        .service-card-thumb {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    @include lg {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,271 @@
+.checklist {
+    ul {
+        padding: 0;
+        list-style: none;
+        text-align: start;
+        margin-bottom: 0;
+    }
+    li {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $body-font;
+        margin-bottom: 10px;
+        display: flex;
+        color: $title-color;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        img,
+        i,svg {
+            font-size: 22px;
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+        img {
+            margin-top: 7px;
+            align-self: self-start;
+        }
+    }      
+    &.style2 {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 10px;
+            li {    
+                color: $body-color; 
+                position: relative;
+                &:before {
+                    content: '';
+                    position: relative;
+                    display: inline-block;
+                    width: 7px;
+                    height: 7px;
+                    background: $theme-color;
+                    align-self: center;
+                    border: 5px solid $smoke-color5;
+                    box-sizing: content-box;
+                    margin-right: 20px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 0px;
+                } 
+                img,          
+                i {
+                    margin-right: 15px;
+                    font-size: 16px;
+                    color: $theme-color;
+                    margin-top: 3px;
+                }
+            }
+            @include ml {
+                grid-template-columns: repeat(2,1fr);
+                li:before {
+                    margin-right: 15px;
+                }
+            }
+            @include ml {
+                grid-template-columns: repeat(1,1fr);
+                li:before {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    &.style3 {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 8px;
+            li {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.style4 {
+        ul {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 9px;
+                }
+            }
+        }
+    }
+    &.style5 {
+        ul {
+            li {
+                font-weight: 400;
+                font-size: 16px;
+                color: $body-color;
+            }
+        }
+    }
+    &.style6 {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 10px;
+            li {    
+                color: $body-color; 
+                position: relative;
+                &:before {
+                    content: '';
+                    position: relative;
+                    display: inline-block;
+                    width: 7px;
+                    height: 7px;
+                    background: $theme-color;
+                    align-self: center;
+                    border: 5px solid $smoke-color5;
+                    box-sizing: content-box;
+                    margin-right: 20px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 0px;
+                } 
+                img,          
+                i {
+                    margin-right: 15px;
+                    font-size: 16px;
+                    color: $theme-color;
+                    margin-top: 3px;
+                }
+            }
+            @include ml {
+                grid-template-columns: repeat(2,1fr);
+                li:before {
+                    margin-right: 15px;
+                }
+            }
+            @include ml {
+                grid-template-columns: repeat(1,1fr);
+                li:before {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    &.style7 {
+        ul {
+            li {
+                font-weight: 400;
+                font-size: 16px;
+                color: $body-color;
+                i {
+                    font-size: 20px;
+                    margin-top: 0;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    &.style-white {
+        li {
+            color: $white-color;
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+            img,
+            i,svg {
+                font-size: 14px;
+                margin-right: 20px;
+                margin-top: 5px;
+            }
+        }
+    }
+    &.mb-40 {
+        @include lg {
+            margin-bottom: 32px;
+        }
+    }
+    &.mb-45 {
+        @include lg {
+            margin-bottom: 35px;
+        }
+    }
+}
+.img-half {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &.img-right {
+        right: 0;
+    }
+}
+.icon-box {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 30px;
+    &.style2 {
+        gap: 30px 40px;
+    }
+}
+.read-more-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: $body-color;
+    position: relative;
+    i,svg {
+        font-size: 12px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        background: $theme-color;
+        width: 0;
+        transition: 0.4s ease-in-out;
+    }
+    &:hover {
+        color: $theme-color;
+        &:after {
+            width: 100%;
+        }
+    }
+}
+.category-tag {
+    background: $theme-color;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: $white-color;
+    font-size: 10px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0 19px;
+    letter-spacing: 1px;
+}
+
+@include lg {
+    p {
+        &.mb-40 {
+            margin-bottom: 35px;
+        }
+        &.mb-45 {
+            margin-bottom: 38px;
+        }
+    }
+}
+@include xs {
+    .checklist.style2 ul li i {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 320px) {
+    
+}

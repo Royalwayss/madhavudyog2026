@@ -1,0 +1,168 @@
+/* Pricing Card ---------------------------------- */
+.pricing-tabs {
+    margin-bottom: 50px;
+    border: 1px solid rgba(31, 31, 31, 0.15);
+    display: inline-flex;
+    border-radius: 0;
+    padding: 10px;
+    .nav-item {
+        .nav-link {
+            font-size: 15px;
+            font-weight: 600;
+            color: $body-color;
+            font-family: $title-font;
+            text-transform: uppercase;
+            border-radius: 0;
+            margin: 0;
+            border: 0;
+            padding: 7px 20px;
+            background: transparent;
+            &.active {
+                background: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+}
+.pricing-card {
+    display: block;
+    padding: 0;
+    background: #F7F7F7;
+    border: 2px solid #F7F7F7;
+    box-shadow: none;
+    transition: 0.4s;
+    padding: 40px 45px;
+    .pricing-card_title {
+        font-size: 24px;
+        font-weight: 700;
+        min-width: 220px;
+        color: $title-color;
+        margin-top: -0.3em;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+    }
+    .pricing-card_text {
+        margin-bottom: 17px;
+    }
+    .pricing-card-details {
+        margin: 28px -25px 40px;
+        background: #EDEDED;
+        padding: 30px;
+        transition: 0.4s;
+        position: relative;
+    }
+    .pricing-card-icon {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0, -100%);
+        .icon {
+            background: $title-color;
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+            text-align: center;
+            display: inline-block;
+            padding: 0;
+        }
+        .tag {
+            background: $theme-color;
+            text-align: center;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: $title-font;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.15em;
+            height: 16px;
+            line-height: 16px;
+        }
+        
+    }
+    .pricing-card_price {
+        margin-bottom: 3px;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 1.228;
+        letter-spacing: -0.015em;
+        color: $theme-color;
+        display: inline-block;
+        position: relative;
+        padding-bottom: 15px;
+        @include xl {
+            font-size: 60px;
+        }
+    }
+    .pricing-card_currency {
+        font-size: 40px;
+        font-weight: 600;
+        position: relative;
+        top: -25px;
+        @include xl {
+            top: -22px;
+        }
+    }
+    .pricing-card_duration {
+        position: absolute;
+        font-size: 18px;
+        color: $body-color;
+        bottom: 0;
+        right: 0;
+        font-weight: 500;
+        letter-spacing: normal;
+    }
+    
+    .checklist {
+        li {
+            position: relative;
+            gap: 12px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:before {
+                content: '';
+                position: relative;
+                width: 6px;
+                height: 6px;
+                background: $theme-color;
+                transition: 0.4s;
+                top: 10px;
+            } 
+            &.unavailable {
+                color: $body-color;
+                &:before {
+                    background: $title-color;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .btn-with-icon {
+        color: $title-color;
+    }
+    &:hover {
+        border: 2px solid $theme-color;
+        .pricing-card-details {
+            background: $title-color;
+        }
+        .checklist li {
+            color: $white-color;
+            &.unavailable {
+                opacity: 0.5;
+            }
+            &:before {
+                background: $theme-color;
+                opacity: 1;
+            }
+        }
+    }
+    @include vxs {
+        padding: 30px 35px;
+        .pricing-card-details {
+            padding: 20px;
+        }
+    }
+} 
+

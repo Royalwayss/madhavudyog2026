@@ -1,0 +1,54 @@
+/* Counter 1 ---------------------------------- */
+.counter-card {
+    position: relative;
+    &_number {
+        margin-top: -0.22em;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 115px;
+        font-family: $title-font;
+        color: transparent;
+        -webkit-text-stroke: 1px $title-color;
+        opacity: 0.4;
+    }
+    &_text {
+        font-weight: 400;
+        font-size: 18px;
+        font-family: $body-font;
+        color: $body-color;
+        margin-bottom: -0.5em;
+    }
+    &:hover {
+        .counter-card_icon {
+            &:after {
+                margin: 0;
+                border-width: 10px;
+                border-color: $theme-color;
+            }
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    @include ml {
+        .counter-card_number {
+            font-size: 90px;
+        }
+    }
+    @include lg {
+        .counter-card_number {
+            font-size: 60px;
+        }
+    }
+    @include md {
+        .counter-card_number {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+    }
+    @include sm {
+        .counter-card_number {
+            margin-top: -0.35em;
+        }
+    }
+}
