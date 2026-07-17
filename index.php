@@ -2,8 +2,11 @@
 <div class="hero-wrapper hero-1 position-relative overflow-hidden" id="hero">
 
     <!-- Background Video -->
-    <video autoplay muted loop playsinline class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video d-none d-md-block">
         <source src="assets/img/madhav/banners/banner.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop playsinline class="hero-video d-block d-md-none">
+        <source src="assets/img/madhav/banners/mobile-banner.mp4" type="video/mp4">
     </video>
 
     <!-- Optional Overlay -->
