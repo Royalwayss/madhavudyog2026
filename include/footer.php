@@ -93,10 +93,10 @@
                 <hr class="my-4 text-muted opacity-25">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="copyright-text mb-0">
-                            &copy; 2026 <a href="#" class="text-decoration-none fw-semibold">Madhav Udyog</a>. All
-                            Rights Reserved.
-                        </p>
+                                                <p class="copyright-text mb-0">
+    &copy; 2026 <span style ="color:#246cbc;" class="text-decoration-none fw-semibold">Madhav Udyog</span>. All Rights Reserved. |
+    Designed by <a href="https://royalways.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-none fw-semibold">Royalways</a>
+</p>
                     </div>
                 </div>
 
