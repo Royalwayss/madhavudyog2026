@@ -390,7 +390,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="border rounded-4 p-4 p-lg-5 bg-light mb-5">
+                <!-- <div class="border rounded-4 p-4 p-lg-5 bg-light mb-5">
                     <div class="row">
                         <div class="col-12 col-md-3 mb-3">
                             <img src="assets/img/madhav/gaurang.jpg" class="d-block w-100" alt="Plant Image">
@@ -410,7 +410,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- EMPLOYEE SPOTLIGHT -->
@@ -421,31 +421,21 @@
                 <div class="section-heading-block text-start mb-2">
                     <h2 class="section-main-title-2">Message From HR</h2>
                 </div>
-
                 <div class="border rounded-4 p-4 p-lg-5 bg-light">
                     <div class="row">
                         <div class="col-12 col-md-3">
-                            <img src="assets/img/madhav/sumit.jpg" class="d-block w-100" alt="Plant Image">
+                            <img src="assets/img/madhav/hr-new.jpg" class="d-block w-100" alt="Plant Image">
                         </div>
-
                         <div class="col-12 col-md-9">
                             <blockquote class="fs-5 mt-0 bg-white">
-                                "At Madhav Udyog, we are committed to creating opportunities that enable people to
-                                realise their potential and build meaningful careers. Our success begins and ends with
-                                our people."
+                                "At Madhav Udyog, we are committed to creating a culture that enables people realise their true potential and achieve their career aspirations and long term life goals."
 
-                                <h5 class="mt-2 mb-1">Sumit Bhatti</h5>
+                                <h5 class="mt-2 mb-1">Vikas Puri</h5>
                                 <p class="mb-0">Vice President – Human Resources</p>
                             </blockquote>
-
-
-
                         </div>
                     </div>
-
-
                 </div>
-
             </div>
         </div>
         <!-- JOIN US -->
